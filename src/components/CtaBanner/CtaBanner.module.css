@@ -1,0 +1,80 @@
+.banner {
+  padding: var(--space-5) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.bgImg {
+  object-fit: cover;
+  z-index: 0;
+}
+
+.withBg :global(.container),
+.withBg > :not(.bgImg) {
+  position: relative;
+  z-index: 1;
+}
+
+.withBg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(244, 245, 247, 0.92), rgba(201, 226, 207, 0.75));
+  z-index: 1;
+}
+
+.withBg.navy::before {
+  background: linear-gradient(135deg, rgba(15, 42, 79, 0.88), rgba(10, 31, 61, 0.92));
+}
+
+.light {
+  background: linear-gradient(
+      135deg,
+      rgba(244, 245, 247, 0.85),
+      rgba(201, 226, 207, 0.6)
+    ),
+    repeating-linear-gradient(
+      45deg,
+      #e2e6ec 0,
+      #e2e6ec 2px,
+      transparent 2px,
+      transparent 12px
+    );
+}
+
+.navy {
+  background: var(--color-navy);
+  color: #fff;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-2);
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--color-navy);
+  line-height: 1.25;
+}
+
+.navy .title {
+  color: #fff;
+}
+
+.desc {
+  color: var(--color-muted);
+  font-size: 1rem;
+  margin-bottom: var(--space-1);
+}
+
+.navy .desc {
+  color: var(--color-on-dark-muted);
+}

@@ -1,0 +1,21 @@
+.title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--color-navy);
+  font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+  margin-bottom: var(--space-4);
+  letter-spacing: -0.01em;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.uppercase {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}

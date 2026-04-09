@@ -1,0 +1,246 @@
+[     752ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[     763ms] [LOG] [HMR] connected @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  164391ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  164483ms] [ERROR] ./src/app/acerca/page.tsx:17:1
+Module not found: Can't resolve './page.module.css'
+  15 |   AFFILIATIONS,
+  16 | } from "@/data/acerca";
+> 17 | import styles from "./page.module.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | export const metadata = {
+  20 |   title: "Acerca de — HSE Solutions",
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:3272
+[  164523ms] [ERROR] ./src/app/acerca/page.tsx:17:1
+Module not found: Can't resolve './page.module.css'
+  15 |   AFFILIATIONS,
+  16 | } from "@/data/acerca";
+> 17 | import styles from "./page.module.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | export const metadata = {
+  20 |   title: "Acerca de — HSE Solutions",
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:3272
+[  164624ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  164734ms] [ERROR] ./src/app/acerca/page.tsx:17:1
+Module not found: Can't resolve './page.module.css'
+  15 |   AFFILIATIONS,
+  16 | } from "@/data/acerca";
+> 17 | import styles from "./page.module.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | export const metadata = {
+  20 |   title: "Acerca de — HSE Solutions",
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:3272
+[  164835ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  164873ms] [ERROR] ./src/app/acerca/page.tsx:17:1
+Module not found: Can't resolve './page.module.css'
+  15 |   AFFILIATIONS,
+  16 | } from "@/data/acerca";
+> 17 | import styles from "./page.module.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | export const metadata = {
+  20 |   title: "Acerca de — HSE Solutions",
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:3272
+[  164945ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3002/?_rsc=wnywt:0
+[  165017ms] [ERROR] ./src/app/acerca/page.tsx:17:1
+Module not found: Can't resolve './page.module.css'
+  15 |   AFFILIATIONS,
+  16 | } from "@/data/acerca";
+> 17 | import styles from "./page.module.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | export const metadata = {
+  20 |   title: "Acerca de — HSE Solutions",
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:3272
+[  165088ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3002/:0
+[  165191ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3002/_next/static/chunks/node_modules_react-dom_0bruynb._.js:15305
+[  165230ms] Error: ./src/app/acerca/page.tsx:17:1
+Module not found: Can't resolve './page.module.css'
+  15 |   AFFILIATIONS,
+  16 | } from "@/data/acerca";
+> 17 | import styles from "./page.module.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | export const metadata = {
+  20 |   title: "Acerca de — HSE Solutions",
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./src/app/acerca/page.tsx:17:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at Object.getCompilationErrors (file:///Users/danielzavala/Desktop/projects/hse/node_modules/next/dist/server/dev/hot-reloader-turbopack.js:1186:59)
+    at DevBundlerService.getCompilationError (file:///Users/danielzavala/Desktop/projects/hse/node_modules/next/dist/server/lib/dev-bundler-service.js:44:55)
+    at DevServer.getCompilationError (file:///Users/danielzavala/Desktop/projects/hse/node_modules/next/dist/server/dev/next-dev-server.js:719:42)
+    at DevServer.findPageComponents (file:///Users/danielzavala/Desktop/projects/hse/node_modules/next/dist/server/dev/next-dev-server.js:689:43)
+    at async DevServer.renderErrorToResponseImpl (file:///Users/danielzavala/Desktop/projects/hse/node_modules/next/dist/server/base-server.js:1745:26)
+[  165256ms] [LOG] [HMR] connected @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  165266ms] [ERROR] ./src/app/acerca/page.tsx:17:1
+Module not found: Can't resolve './page.module.css'
+  15 |   AFFILIATIONS,
+  16 | } from "@/data/acerca";
+> 17 | import styles from "./page.module.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | export const metadata = {
+  20 |   title: "Acerca de — HSE Solutions",
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  165303ms] [ERROR] ./src/app/acerca/page.tsx:17:1
+Module not found: Can't resolve './page.module.css'
+  15 |   AFFILIATIONS,
+  16 | } from "@/data/acerca";
+> 17 | import styles from "./page.module.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | export const metadata = {
+  20 |   title: "Acerca de — HSE Solutions",
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  177460ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  177561ms] [LOG] [Fast Refresh] done in 22ms @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  177841ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  177853ms] [LOG] [HMR] connected @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  240652ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  240672ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3002/acerca?_rsc=1yqo5:0
+[  240690ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3002/acerca?_rsc=1yqo5:0
+[  240734ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3002/acerca?_rsc=1yqo5:0
+[  240737ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3002/acerca:0
+[  240832ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3002/_next/static/chunks/node_modules_react-dom_0bruynb._.js:15305
+[  240862ms] Error: ./src/app/servicios/page.tsx:11:1
+Module not found: Can't resolve './page.module.css'
+   9 | import { CtaBanner } from "@/components/CtaBanner/CtaBanner";
+  10 | import { DETAILED_SERVICES, POLICY_BENEFITS } from "@/data/servicios";
+> 11 | import styles from "./page.module.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export const metadata = {
+  14 |   title: "Servicios — HSE Solutions",
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./src/app/servicios/page.tsx:11:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at Object.getCompilationErrors (file:///Users/danielzavala/Desktop/projects/hse/node_modules/next/dist/server/dev/hot-reloader-turbopack.js:1186:59)
+    at DevBundlerService.getCompilationError (file:///Users/danielzavala/Desktop/projects/hse/node_modules/next/dist/server/lib/dev-bundler-service.js:44:55)
+    at DevServer.getCompilationError (file:///Users/danielzavala/Desktop/projects/hse/node_modules/next/dist/server/dev/next-dev-server.js:719:42)
+    at DevServer.findPageComponents (file:///Users/danielzavala/Desktop/projects/hse/node_modules/next/dist/server/dev/next-dev-server.js:689:43)
+    at async DevServer.renderErrorToResponseImpl (file:///Users/danielzavala/Desktop/projects/hse/node_modules/next/dist/server/base-server.js:1745:26)
+[  240849ms] [LOG] [HMR] connected @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  240871ms] [ERROR] ./src/app/servicios/page.tsx:11:1
+Module not found: Can't resolve './page.module.css'
+   9 | import { CtaBanner } from "@/components/CtaBanner/CtaBanner";
+  10 | import { DETAILED_SERVICES, POLICY_BENEFITS } from "@/data/servicios";
+> 11 | import styles from "./page.module.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export const metadata = {
+  14 |   title: "Servicios — HSE Solutions",
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240907ms] [ERROR] ./src/app/servicios/page.tsx:11:1
+Module not found: Can't resolve './page.module.css'
+   9 | import { CtaBanner } from "@/components/CtaBanner/CtaBanner";
+  10 | import { DETAILED_SERVICES, POLICY_BENEFITS } from "@/data/servicios";
+> 11 | import styles from "./page.module.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export const metadata = {
+  14 |   title: "Servicios — HSE Solutions",
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  240990ms] [ERROR] ./src/app/servicios/page.tsx:11:1
+Module not found: Can't resolve './page.module.css'
+   9 | import { CtaBanner } from "@/components/CtaBanner/CtaBanner";
+  10 | import { DETAILED_SERVICES, POLICY_BENEFITS } from "@/data/servicios";
+> 11 | import styles from "./page.module.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export const metadata = {
+  14 |   title: "Servicios — HSE Solutions",
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  241013ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  258822ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  258931ms] [LOG] [Fast Refresh] done in 15ms @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  259252ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  259261ms] [LOG] [HMR] connected @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  259297ms] [WARNING] Image with src "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  302105ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  302144ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3002/contacto?_rsc=6i80n:0
+[  302215ms] [ERROR] ./src/app/contacto/page.tsx:15:1
+Module not found: Can't resolve './page.module.css'
+  13 | import { Button } from "@/components/Button/Button";
+  14 | import { SITE } from "@/data/site";
+> 15 | import styles from "./page.module.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  16 |
+  17 | export const metadata = {
+  18 |   title: "Contacto — HSE Solutions",
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:3272
+[  302232ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3002/contacto?_rsc=6i80n:0
+[  302307ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3002/contacto:0
+[  302380ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3002/_next/static/chunks/node_modules_react-dom_0bruynb._.js:15305
+[  302388ms] Error: ./src/app/contacto/page.tsx:15:1
+Module not found: Can't resolve './page.module.css'
+  13 | import { Button } from "@/components/Button/Button";
+  14 | import { SITE } from "@/data/site";
+> 15 | import styles from "./page.module.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  16 |
+  17 | export const metadata = {
+  18 |   title: "Contacto — HSE Solutions",
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./src/app/contacto/page.tsx:15:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at Object.getCompilationErrors (file:///Users/danielzavala/Desktop/projects/hse/node_modules/next/dist/server/dev/hot-reloader-turbopack.js:1186:59)
+    at DevBundlerService.getCompilationError (file:///Users/danielzavala/Desktop/projects/hse/node_modules/next/dist/server/lib/dev-bundler-service.js:44:55)
+    at DevServer.getCompilationError (file:///Users/danielzavala/Desktop/projects/hse/node_modules/next/dist/server/dev/next-dev-server.js:719:42)
+    at DevServer.findPageComponents (file:///Users/danielzavala/Desktop/projects/hse/node_modules/next/dist/server/dev/next-dev-server.js:689:43)
+    at async DevServer.renderErrorToResponseImpl (file:///Users/danielzavala/Desktop/projects/hse/node_modules/next/dist/server/base-server.js:1745:26)
+[  302391ms] [LOG] [HMR] connected @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  302403ms] [ERROR] ./src/app/contacto/page.tsx:15:1
+Module not found: Can't resolve './page.module.css'
+  13 | import { Button } from "@/components/Button/Button";
+  14 | import { SITE } from "@/data/site";
+> 15 | import styles from "./page.module.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  16 |
+  17 | export const metadata = {
+  18 |   title: "Contacto — HSE Solutions",
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  302475ms] [ERROR] ./src/app/contacto/page.tsx:15:1
+Module not found: Can't resolve './page.module.css'
+  13 | import { Button } from "@/components/Button/Button";
+  14 | import { SITE } from "@/data/site";
+> 15 | import styles from "./page.module.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  16 |
+  17 | export const metadata = {
+  18 |   title: "Contacto — HSE Solutions",
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  315849ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  315938ms] [LOG] [Fast Refresh] done in 19ms @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  316197ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  316207ms] [LOG] [HMR] connected @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431

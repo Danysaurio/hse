@@ -1,0 +1,207 @@
+.policy {
+  background: var(--color-bg);
+  padding: var(--space-5) 0;
+}
+
+.policyHead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.policyHead h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 2.4vw, 1.6rem);
+  color: var(--color-navy);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.policyIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: var(--color-green);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.policyGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+  background: var(--color-surface);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.policyLead {
+  font-size: 1.05rem;
+  color: var(--color-navy);
+  text-align: center;
+  margin-bottom: var(--space-2);
+}
+
+.policyBody {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: var(--space-3);
+}
+
+.policyList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--color-navy);
+}
+
+.policyList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.92rem;
+}
+
+.benefits h3 {
+  font-family: var(--font-display);
+  color: var(--color-navy);
+  font-size: 1.15rem;
+  margin-bottom: var(--space-2);
+}
+
+.benefits ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.benefits li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.benefits strong {
+  color: var(--color-navy);
+}
+
+.chev {
+  color: var(--color-green);
+  margin-top: 5px;
+  flex-shrink: 0;
+  font-size: 11px;
+}
+
+.policyCta {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-4);
+}
+
+.detailed {
+  padding: var(--space-5) 0;
+  background: var(--color-surface);
+}
+
+.detailedGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+}
+
+.dCard {
+  background: var(--color-bg);
+  border-radius: var(--radius-md);
+  padding: var(--space-4) var(--space-3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-2);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.dIcon {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: rgba(29, 107, 79, 0.08);
+  color: var(--color-green);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 38px;
+}
+
+.dTitle {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--color-navy);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: pre-line;
+}
+
+.dBody {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.dBody strong {
+  color: var(--color-navy);
+}
+
+.dItemsLabel {
+  font-family: var(--font-display);
+  color: var(--color-navy);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-top: var(--space-1);
+}
+
+.dItems {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 260px;
+}
+
+.dItems li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+@media (min-width: 900px) {
+  .policyGrid {
+    grid-template-columns: 1.2fr 1fr;
+    padding: var(--space-5);
+  }
+  .detailedGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

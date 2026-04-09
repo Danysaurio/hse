@@ -1,0 +1,160 @@
+.section {
+  background: var(--color-bg);
+  padding: var(--space-5) 0;
+  min-height: 60vh;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  color: var(--color-navy);
+  line-height: 1.1;
+  margin-bottom: var(--space-3);
+}
+
+.contact,
+.times {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: var(--space-3);
+}
+
+.contact li,
+.times li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: var(--color-navy);
+  font-size: 0.95rem;
+}
+
+.contact svg,
+.times svg {
+  color: var(--color-green);
+  margin-top: 4px;
+  width: 16px;
+}
+
+.subtitle {
+  font-family: var(--font-display);
+  color: var(--color-navy);
+  font-size: 1.1rem;
+  margin-bottom: var(--space-2);
+}
+
+.times strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.times p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.dim {
+  color: var(--color-muted);
+  font-size: 0.85rem;
+}
+
+.panel {
+  position: relative;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.calHead {
+  border-left: 3px solid var(--color-green);
+  padding-left: var(--space-2);
+}
+
+.calName {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--color-navy);
+}
+
+.calMeta {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.calBody {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.placeholder {
+  background: var(--color-bg);
+  border: 2px dashed var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  text-align: center;
+  color: var(--color-navy);
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form span {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--color-navy);
+}
+
+.form input,
+.form textarea {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  padding: 12px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg);
+  color: var(--color-navy);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: var(--color-green);
+  box-shadow: 0 0 0 3px rgba(29, 107, 79, 0.15);
+  background: #fff;
+}
+
+.form button {
+  align-self: flex-start;
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr 1.2fr;
+    gap: var(--space-5);
+  }
+}

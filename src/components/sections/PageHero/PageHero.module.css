@@ -1,0 +1,29 @@
+.hero {
+  background: var(--color-bg);
+  padding: var(--space-5) 0 var(--space-4);
+}
+
+.eyebrow {
+  color: var(--color-muted);
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin-bottom: var(--space-1);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  color: var(--color-navy);
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  max-width: 900px;
+}
+
+.subtitle {
+  margin-top: var(--space-2);
+  color: var(--color-muted);
+  font-size: 1.1rem;
+  max-width: 720px;
+}

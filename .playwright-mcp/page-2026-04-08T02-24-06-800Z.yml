@@ -1,0 +1,180 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "HSE Solutions" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img [ref=e7]
+        - generic [ref=e9]: HSE Solutions
+      - navigation [ref=e10]:
+        - link "Inicio" [ref=e11] [cursor=pointer]:
+          - /url: /
+        - link "Acerca de" [ref=e12] [cursor=pointer]:
+          - /url: /acerca
+        - link "Servicios" [ref=e13] [cursor=pointer]:
+          - /url: /servicios
+        - link "Contacto" [ref=e14] [cursor=pointer]:
+          - /url: /contacto
+  - main [ref=e15]:
+    - heading "Transformamos la complejidad normativa en ventajas competitivas para su industria." [level=1] [ref=e18]
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - img [ref=e23]
+        - 'heading "Póliza HSE Solutions®: Solución Integral" [level=2] [ref=e25]'
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - paragraph [ref=e28]:
+            - text: Tu aliado permanente en
+            - strong [ref=e29]: gestión integral
+            - text: . La Póliza HSE Solutions® acompaña a tu empresa desde el diagnóstico inicial hasta la mejora continua.
+          - paragraph [ref=e30]:
+            - strong [ref=e31]: Incluye
+            - text: auditorías, reportes ejecutivos, planes de acción estratégicos, documentación clave, entrenamiento especializado y sistemas de gestión con indicadores de desempeño. Un servicio integral que garantiza resiliencia, cumplimiento y sustentabilidad.
+          - list [ref=e32]:
+            - listitem [ref=e33]:
+              - img [ref=e34]
+              - text: Diseño e implementación de Sistemas de Gestión Integrados o Específicos
+            - listitem [ref=e36]:
+              - img [ref=e37]
+              - text: Evaluación y mejora de Sistemas de Gestión Integrados o Específicos
+            - listitem [ref=e39]:
+              - img [ref=e40]
+              - text: Desarrollo de Programas de Seguridad y seguimiento de indicadores
+            - listitem [ref=e42]:
+              - img [ref=e43]
+              - text: Desarrollo de Programas de cumplimiento legal y seguimiento de indicadores
+        - complementary [ref=e45]:
+          - heading "¿Por qué elegirla?" [level=3] [ref=e46]
+          - list [ref=e47]:
+            - listitem [ref=e48]:
+              - img [ref=e49]
+              - generic [ref=e51]:
+                - strong [ref=e52]: "Cobertura total en un solo contrato:"
+                - text: Integramos consultoría, capacitación y auditoría en un paquete único.
+            - listitem [ref=e53]:
+              - img [ref=e54]
+              - generic [ref=e56]:
+                - strong [ref=e57]: "Enfoque preventivo:"
+                - text: Anticipamos riesgos para transformarlos en ventajas competitivas y operaciones sustentables.
+            - listitem [ref=e58]:
+              - img [ref=e59]
+              - generic [ref=e61]:
+                - strong [ref=e62]: "Recursos visuales y editables:"
+                - text: protocolos y matices claros que facilitan la adopción y transferencia de conocimiento en su equipo.
+            - listitem [ref=e63]:
+              - img [ref=e64]
+              - generic [ref=e66]:
+                - strong [ref=e67]: "Indicadores medibles (KPIs):"
+                - text: Traducimos cada acción en métricas verificables que respaldan resultados.
+            - listitem [ref=e68]:
+              - img [ref=e69]
+              - generic [ref=e71]:
+                - strong [ref=e72]: "Sello de confianza institucional:"
+                - text: el distintivo HSE Solutions Certified avala su cumplimiento.
+            - listitem [ref=e73]:
+              - img [ref=e74]
+              - generic [ref=e76]:
+                - strong [ref=e77]: "Aliado estratégico:"
+                - text: más que proveedores, brindamos un acompañamiento permanente.
+      - link "Agendar Sesión de Diagnóstico" [ref=e79] [cursor=pointer]:
+        - /url: /contacto
+    - generic [ref=e82]:
+      - article [ref=e83]:
+        - img [ref=e85]
+        - heading "Capacitación Técnica y Normativa" [level=3] [ref=e87]
+        - paragraph [ref=e88]:
+          - strong [ref=e89]: Domina la normativa, impulsa la excelencia.
+          - text: Formamos equipos sólidos y competentes en NOM, estándares internacionales y metodologías aplicadas, asegurando cumplimiento regulatorio y cultura preventiva. La capacitación se convierte en una ventaja competitiva que eleva la seguridad y la sustentabilidad de tu organización. Transforma el conocimiento en resultados medibles.
+        - paragraph [ref=e90]: "Ofrecemos capacitación en:"
+        - list [ref=e91]:
+          - listitem [ref=e92]:
+            - img [ref=e93]
+            - text: NOM (Normas Oficiales Mexicanas)
+          - listitem [ref=e95]:
+            - img [ref=e96]
+            - text: Estándares Internacionales
+          - listitem [ref=e98]:
+            - img [ref=e99]
+            - text: Metodologías aplicadas
+      - article [ref=e101]:
+        - img [ref=e103]
+        - heading "Consultoría Especializada" [level=3] [ref=e105]
+        - paragraph [ref=e106]:
+          - strong [ref=e107]: Soluciones a la medida de tu organización.
+          - text: Diseñamos, implementamos y mejoramos Sistemas de Gestión Integrados o específicos, desarrollando programas de seguridad y cumplimiento legal con indicadores estratégicos. Nuestra consultoría convierte la gestión de riesgos en un motor de competitividad y confianza institucional. Tu estrategia, fortalecida con experiencia y visión global.
+        - paragraph [ref=e108]: "Lo que ofrecemos:"
+        - list [ref=e109]:
+          - listitem [ref=e110]:
+            - img [ref=e111]
+            - text: NOM (Normas Oficiales Mexicanas)
+          - listitem [ref=e113]:
+            - img [ref=e114]
+            - text: Estándares Internacionales
+          - listitem [ref=e116]:
+            - img [ref=e117]
+            - text: Metodologías aplicadas
+      - article [ref=e119]:
+        - img [ref=e121]
+        - heading "Auditoría Técnica y Normativa" [level=3] [ref=e123]
+        - paragraph [ref=e124]:
+          - strong [ref=e125]: Rigor que genera confianza.
+          - text: Validamos la efectividad de tus sistemas en seguridad laboral, salud ocupacional, medio ambiente y sustentabilidad, con auditorías y peritajes especializados. Nuestros diagnósticos precisos permiten corregir desviaciones y proyectar responsabilidad frente a clientes, autoridades y sociedad. Auditorías que aseguran credibilidad y cumplimiento real.
+        - paragraph [ref=e126]: "Ofrecemos auditoría en temas de:"
+        - list [ref=e127]:
+          - listitem [ref=e128]:
+            - img [ref=e129]
+            - text: NOM (Normas Oficiales Mexicanas)
+          - listitem [ref=e131]:
+            - img [ref=e132]
+            - text: Estándares Internacionales
+          - listitem [ref=e134]:
+            - img [ref=e135]
+            - text: Metodologías aplicadas
+    - generic [ref=e139]:
+      - heading "Conozca con exactitud el nivel de cumplimiento normativo y protección que requiere su instalación. Hablemos." [level=2] [ref=e140]:
+        - text: Conozca
+        - strong [ref=e141]: con exactitud
+        - text: el nivel de cumplimiento normativo y protección que
+        - strong [ref=e142]: requiere
+        - text: su instalación. Hablemos.
+      - link "Agendar Sesión Diagnóstico" [ref=e143] [cursor=pointer]:
+        - /url: /contacto
+  - contentinfo [ref=e144]:
+    - generic [ref=e145]:
+      - generic [ref=e146]:
+        - generic [ref=e147]:
+          - link "HSE Solutions" [ref=e148] [cursor=pointer]:
+            - /url: /
+            - img [ref=e150]
+            - generic [ref=e152]: HSE Solutions
+          - paragraph [ref=e153]: Soluciones Integrales hacia un futuro seguro y sustentable
+        - list [ref=e155]:
+          - listitem [ref=e156]:
+            - link "Servicios" [ref=e157] [cursor=pointer]:
+              - /url: /servicios
+          - listitem [ref=e158]:
+            - link "Acerca de" [ref=e159] [cursor=pointer]:
+              - /url: /acerca
+          - listitem [ref=e160]:
+            - link "Contacto" [ref=e161] [cursor=pointer]:
+              - /url: /contacto
+          - listitem [ref=e162]:
+            - link "Volver Arriba" [ref=e163] [cursor=pointer]:
+              - /url: "#top"
+        - generic [ref=e164]:
+          - heading "Información de contacto" [level=4] [ref=e165]
+          - list [ref=e166]:
+            - listitem [ref=e167]: Mtro. Martín Conde Carreño
+            - listitem [ref=e168]: martin.condeca@yahoo.com
+            - listitem [ref=e169]: "3311961280"
+            - listitem [ref=e170]: www.hsesolutions.com
+            - listitem [ref=e171]: Zapopan, Jalisco, México
+      - generic [ref=e172]:
+        - generic [ref=e173]:
+          - link "Aviso de Privacidad" [ref=e174] [cursor=pointer]:
+            - /url: /privacidad
+          - link "Términos y Condiciones" [ref=e175] [cursor=pointer]:
+            - /url: /terminos
+        - generic [ref=e176]: © 2026 HSE Solutions®. Todos los derechos reservados. | Diseñado por Janet Conde design
+  - button "Open Next.js Dev Tools" [ref=e182] [cursor=pointer]:
+    - img [ref=e183]
+  - alert [ref=e186]

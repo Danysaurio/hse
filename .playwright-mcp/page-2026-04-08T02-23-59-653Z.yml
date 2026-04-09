@@ -1,0 +1,183 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "HSE Solutions" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img [ref=e7]
+        - generic [ref=e9]: HSE Solutions
+      - navigation [ref=e10]:
+        - link "Inicio" [ref=e11] [cursor=pointer]:
+          - /url: /
+        - link "Acerca de" [ref=e12] [cursor=pointer]:
+          - /url: /acerca
+        - link "Servicios" [ref=e13] [cursor=pointer]:
+          - /url: /servicios
+        - link "Contacto" [ref=e14] [cursor=pointer]:
+          - /url: /contacto
+  - main [ref=e15]:
+    - generic [ref=e17]:
+      - paragraph [ref=e18]: Acerca de | HSE Solutions®
+      - heading "Acerca de | Mtro. Martín Conde Carreño" [level=1] [ref=e19]
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - img "Mtro. Martín Conde Carreño" [ref=e24]
+        - generic [ref=e25]:
+          - paragraph [ref=e26]:
+            - strong [ref=e27]: Consultor, estratega y fundador de HSE Solutions®.
+            - text: Martín cuenta con una sólida trayectoria de más de tres décadas ocupando posiciones de alto nivel en las áreas de protección civil, medio ambiente y seguridad industrial.
+          - paragraph [ref=e28]: Su enfoque integral combina liderazgo directivo, formación especializada y asesoría técnica, aportando a las empresas los protocolos necesarios para garantizar operaciones seguras y eficientes.
+          - heading "Roles Clave" [level=3] [ref=e29]
+          - list [ref=e30]:
+            - listitem [ref=e31]:
+              - generic [ref=e32]: "1993"
+              - generic [ref=e34]:
+                - paragraph [ref=e35]: Grupo Primex
+                - paragraph [ref=e36]: Superintendente de Medio Ambiente, Seguridad e Higiene
+            - listitem [ref=e37]:
+              - generic [ref=e38]: "2005"
+              - generic [ref=e40]:
+                - paragraph [ref=e41]: MASISA
+                - paragraph [ref=e42]: Gerente de Logística Nacional
+            - listitem [ref=e43]:
+              - generic [ref=e44]: "2008"
+              - generic [ref=e46]:
+                - paragraph [ref=e47]: QUALTIA
+                - paragraph [ref=e48]: Gerente de Operaciones Occidente
+            - listitem [ref=e49]:
+              - generic [ref=e50]: "2014"
+              - generic [ref=e52]:
+                - paragraph [ref=e53]: PMV
+                - paragraph [ref=e54]: Gerente HSE
+            - listitem [ref=e55]:
+              - generic [ref=e56]: "2019"
+              - generic [ref=e58]:
+                - paragraph [ref=e59]: VESTOLIT / ORBIA
+                - paragraph [ref=e60]: Gerente HSE México
+      - blockquote [ref=e61]:
+        - paragraph [ref=e62]: Mi compromiso es transformar la gestión de riesgos en confianza institucional, integrando rigor técnico con visión estratégica para construir entornos más seguros y sustentables.
+    - generic [ref=e64]:
+      - heading "Áreas de especialidad" [level=2] [ref=e65]
+      - generic [ref=e66]:
+        - article [ref=e67]:
+          - heading "Estrategia y Cumplimiento" [level=3] [ref=e69]
+          - list [ref=e70]:
+            - listitem [ref=e71]:
+              - img [ref=e72]
+              - generic [ref=e74]: Diseño e implementación de Sistemas de Gestión Integrados.
+            - listitem [ref=e75]:
+              - img [ref=e76]
+              - generic [ref=e78]: Auditoría técnica y documental en materia de HSE.
+            - listitem [ref=e79]:
+              - img [ref=e80]
+              - generic [ref=e82]: Capacitación normativa y técnica especializada por sector.
+        - article [ref=e83]:
+          - heading "Prevención y Respuesta Crítica" [level=3] [ref=e85]
+          - list [ref=e86]:
+            - listitem [ref=e87]:
+              - img [ref=e88]
+              - generic [ref=e90]: Especialista en Análisis de Riesgos y Evaluación de Impacto Ambiental.
+            - listitem [ref=e91]:
+              - img [ref=e92]
+              - generic [ref=e94]: Investigación pericial de accidentes.
+            - listitem [ref=e95]:
+              - img [ref=e96]
+              - generic [ref=e98]: Coordinación de soluciones integrales y manejo de crisis.
+        - article [ref=e99]:
+          - heading "Operaciones y Sectores Clave" [level=3] [ref=e101]
+          - list [ref=e102]:
+            - listitem [ref=e103]:
+              - img [ref=e104]
+              - generic [ref=e106]: Liderazgo en Seguridad, Medio Ambiente y Salud Ocupacional.
+            - listitem [ref=e107]:
+              - img [ref=e108]
+              - generic [ref=e110]: "Visión integral: Producción, Ingeniería y Cadena de Suministro."
+            - listitem [ref=e111]:
+              - img [ref=e112]
+              - generic [ref=e114]: "Industrias: Química, Petroquímica, Oil & Gas, Maderera, Alimentos y Traslado de Valores."
+    - generic [ref=e116]:
+      - heading "Credenciales Personales" [level=2] [ref=e117]
+      - generic [ref=e118]:
+        - article [ref=e119]:
+          - img [ref=e121]
+          - paragraph [ref=e123]: Ingeniero Químico Industrial, egresado de la UDLA, Puebla, cédula 1319129.
+        - article [ref=e124]:
+          - img [ref=e126]
+          - paragraph [ref=e128]: Maestro en Sistemas Ambientales, egresado del ITESM, cédula 3777378.
+        - article [ref=e129]:
+          - img [ref=e131]
+          - paragraph [ref=e133]: Perito en Seguridad Laboral 0031, certificado por el Colegio Nacional de Peritos en Seguridad Laboral y Protección Civil.
+        - article [ref=e134]:
+          - img [ref=e136]
+          - paragraph [ref=e138]: Perito Ambiental P.0172-2022, considerado en la "Lista de personas que pueden fungir como peritas o peritos ante los órganos del poder judicial de la federación" desde 2022.
+        - article [ref=e139]:
+          - img [ref=e141]
+          - paragraph [ref=e143]: Auditor Líder certificado por CQI / IRCA en Sistemas de Gestión de Calidad basado en ISO9001:2015, número de certificado 57329223-146912508.
+        - article [ref=e144]:
+          - img [ref=e146]
+          - paragraph [ref=e148]: Experto técnico en Sistemas de Gestión Ambiental ET-SGA-016-OC y en Sistemas de Gestión de la Calidad ET-SGC-018-OC, aprobado por la EMA.
+        - article [ref=e149]:
+          - img [ref=e151]
+          - paragraph [ref=e153]: "Capacitador externo con registro ante la STPS: COCM641103D50-0005."
+        - article [ref=e154]:
+          - img [ref=e156]
+          - paragraph [ref=e158]: Técnico Básico en Gestión Integral de Riesgos con folio 22164HO7235, CENAPRED.
+        - article [ref=e159]:
+          - img [ref=e161]
+          - paragraph [ref=e163]: Experto técnico en Normas Oficiales Mexicanas de la STPS, ETSH-117-UI, aprobado por la EMA.
+    - generic [ref=e165]:
+      - heading "Afiliaciones y Membresías" [level=2] [ref=e166]
+      - generic [ref=e167]:
+        - article [ref=e168]:
+          - img [ref=e170]
+          - generic [ref=e172]:
+            - heading "CANACO" [level=4] [ref=e173]
+            - paragraph [ref=e174]: Cámara Nacional de Comercio, Servicios y Turismo
+        - article [ref=e175]:
+          - img [ref=e177]
+          - generic [ref=e179]:
+            - heading "Colegio Nacional" [level=4] [ref=e180]
+            - paragraph [ref=e181]: Colegio Nacional de Peritos en Seguridad Laboral y Protección Civil
+    - generic [ref=e184]:
+      - heading "La resiliencia de su organización comienza con la estrategia correcta." [level=2] [ref=e185]
+      - paragraph [ref=e186]: Ponga más de 30 años de experiencia pericial y directiva a trabajar para su empresa. Conversemos sobre sus desafíos en HSE.
+      - link "Solicitar asesoría" [ref=e187] [cursor=pointer]:
+        - /url: /contacto
+  - contentinfo [ref=e188]:
+    - generic [ref=e189]:
+      - generic [ref=e190]:
+        - generic [ref=e191]:
+          - link "HSE Solutions" [ref=e192] [cursor=pointer]:
+            - /url: /
+            - img [ref=e194]
+            - generic [ref=e196]: HSE Solutions
+          - paragraph [ref=e197]: Soluciones Integrales hacia un futuro seguro y sustentable
+        - list [ref=e199]:
+          - listitem [ref=e200]:
+            - link "Servicios" [ref=e201] [cursor=pointer]:
+              - /url: /servicios
+          - listitem [ref=e202]:
+            - link "Acerca de" [ref=e203] [cursor=pointer]:
+              - /url: /acerca
+          - listitem [ref=e204]:
+            - link "Contacto" [ref=e205] [cursor=pointer]:
+              - /url: /contacto
+          - listitem [ref=e206]:
+            - link "Volver Arriba" [ref=e207] [cursor=pointer]:
+              - /url: "#top"
+        - generic [ref=e208]:
+          - heading "Información de contacto" [level=4] [ref=e209]
+          - list [ref=e210]:
+            - listitem [ref=e211]: Mtro. Martín Conde Carreño
+            - listitem [ref=e212]: martin.condeca@yahoo.com
+            - listitem [ref=e213]: "3311961280"
+            - listitem [ref=e214]: www.hsesolutions.com
+            - listitem [ref=e215]: Zapopan, Jalisco, México
+      - generic [ref=e216]:
+        - generic [ref=e217]:
+          - link "Aviso de Privacidad" [ref=e218] [cursor=pointer]:
+            - /url: /privacidad
+          - link "Términos y Condiciones" [ref=e219] [cursor=pointer]:
+            - /url: /terminos
+        - generic [ref=e220]: © 2026 HSE Solutions®. Todos los derechos reservados. | Diseñado por Janet Conde design
+  - button "Open Next.js Dev Tools" [ref=e226] [cursor=pointer]:
+    - img [ref=e227]

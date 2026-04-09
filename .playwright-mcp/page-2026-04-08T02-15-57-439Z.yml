@@ -1,0 +1,133 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "HSE Solutions" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img [ref=e7]
+        - generic [ref=e9]: HSE Solutions
+      - navigation [ref=e10]:
+        - link "Inicio" [ref=e11] [cursor=pointer]:
+          - /url: /
+        - link "Acerca de" [ref=e12] [cursor=pointer]:
+          - /url: /acerca
+        - link "Servicios" [ref=e13] [cursor=pointer]:
+          - /url: /servicios
+        - link "Contacto" [ref=e14] [cursor=pointer]:
+          - /url: /contacto
+  - main [ref=e15]:
+    - generic [ref=e18]:
+      - heading "Transformamos riesgos complejos en soluciones sustentables" [level=1] [ref=e19]
+      - paragraph [ref=e20]: Diseñamos estrategias claras, prácticas y verificables que protegen a tu equipo y optimizan tu operación.
+      - link "Encuentra el servicio ideal para tu empresa" [ref=e21] [cursor=pointer]:
+        - /url: /servicios
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - img [ref=e27]
+        - generic [ref=e29]: HSE Solutions
+      - paragraph [ref=e30]: Con más de 35 años de experiencia en gestión integral de riesgos, seguridad industrial, protección civil y sustentabilidad, HSE Solutions® se presenta como una firma especializada en transformar desafíos complejos en estrategias confiables y soluciones integrales, aplicando el rigor técnico y dando como resultado cambios en la cultura, fortalecimiento de la resiliencia organizacional y la confianza institucional.
+    - generic [ref=e33]:
+      - img "Mtro. Martín Conde Carreño" [ref=e35]
+      - generic [ref=e36]:
+        - heading "Mtro. Martín Conde Carreño" [level=2] [ref=e37]
+        - paragraph [ref=e38]: El experto detrás de HSE Solutions®
+        - paragraph [ref=e39]:
+          - text: Martín Conde es
+          - strong [ref=e40]: consultor, formador y estratega
+          - text: especializado en gestión integral de riesgos, seguridad industrial, protección civil y sustentabilidad. Con una trayectoria consolidada y visión interdisciplinaria, ha transformado protocolos técnicos en soluciones prácticas y visuales de alto impacto.
+        - paragraph [ref=e41]:
+          - text: Como
+          - strong [ref=e42]: fundador de HSE Solutions®
+          - text: ", integra experiencia pericial, pensamiento estratégico y comunicación persuasiva para acompañar a las organizaciones en la construcción de entornos más seguros, resilientes y sustentables."
+        - link "Conocer más" [ref=e44] [cursor=pointer]:
+          - /url: /acerca
+    - generic [ref=e46]:
+      - heading "Lo que ofrecemos" [level=2] [ref=e47]
+      - generic [ref=e48]:
+        - article [ref=e49]:
+          - img [ref=e51]
+          - heading "Gestión Integral de Riesgos" [level=3] [ref=e53]
+          - paragraph [ref=e54]: Domina tus riesgos con metodologías probadas que convierten la incertidumbre en decisiones seguras y estratégicas.
+        - article [ref=e55]:
+          - img [ref=e57]
+          - heading "Seguridad Industrial y Protección Civil" [level=3] [ref=e59]
+          - paragraph [ref=e60]: Protege lo esencial fortaleciendo la resiliencia de tu organización con protocolos confiables y adaptados a cada entorno.
+        - article [ref=e61]:
+          - img [ref=e63]
+          - heading "Sustentabilidad y Responsabilidad Corporativa" [level=3] [ref=e65]
+          - paragraph [ref=e66]: Impulsa tu sustentabilidad integrando prácticas responsables que elevan tu competitividad y consolidan tu reputación institucional.
+    - generic [ref=e68]:
+      - heading "Industrias que servimos" [level=2] [ref=e69]
+      - generic [ref=e70]:
+        - generic [ref=e71] [cursor=pointer]:
+          - img "Industria petroquímica" [ref=e72]
+          - generic [ref=e74]: Petroquímica
+        - generic [ref=e75] [cursor=pointer]:
+          - img "Laboratorio farmacéutico" [ref=e76]
+          - generic [ref=e78]: Farmacéutica
+        - generic [ref=e79] [cursor=pointer]:
+          - img "Investigación química" [ref=e80]
+          - generic [ref=e82]: Química
+        - generic [ref=e83] [cursor=pointer]:
+          - img "Puerto marítimo" [ref=e84]
+          - generic [ref=e86]: Marítima
+    - generic [ref=e89]:
+      - heading "Más que un servicio, una solución integral" [level=2] [ref=e90]
+      - paragraph [ref=e91]: "Póliza HSE Solutions®: Diagnóstico, implementación y mejora continua en un sólo contrato."
+      - paragraph [ref=e92]: "La Póliza HSE Solutions® no es un servicio aislado, es un sistema integral de gestión de riesgos que acompaña a tu organización en cada etapa: diagnóstico, implementación, capacitación, auditoría y mejora continua."
+      - link "Conoce la Póliza HSE" [ref=e93] [cursor=pointer]:
+        - /url: /servicios
+    - generic [ref=e95]:
+      - heading "Nuestros Servicios" [level=2] [ref=e96]
+      - generic [ref=e97]:
+        - generic [ref=e98]:
+          - img "Capacitación corporativa" [ref=e99]
+          - generic [ref=e100]: Capacitación
+        - generic [ref=e101]:
+          - img "Consultoría especializada" [ref=e102]
+          - generic [ref=e103]: Consultoría
+        - generic [ref=e104]:
+          - img "Auditoría técnica" [ref=e105]
+          - generic [ref=e106]: Auditoría
+        - generic [ref=e107]:
+          - img "Acuerdo profesional" [ref=e108]
+          - generic [ref=e109]: Asesoría
+  - contentinfo [ref=e110]:
+    - generic [ref=e111]:
+      - generic [ref=e112]:
+        - generic [ref=e113]:
+          - link "HSE Solutions" [ref=e114] [cursor=pointer]:
+            - /url: /
+            - img [ref=e116]
+            - generic [ref=e118]: HSE Solutions
+          - paragraph [ref=e119]: Soluciones Integrales hacia un futuro seguro y sustentable
+        - list [ref=e121]:
+          - listitem [ref=e122]:
+            - link "Servicios" [ref=e123] [cursor=pointer]:
+              - /url: /servicios
+          - listitem [ref=e124]:
+            - link "Acerca de" [ref=e125] [cursor=pointer]:
+              - /url: /acerca
+          - listitem [ref=e126]:
+            - link "Contacto" [ref=e127] [cursor=pointer]:
+              - /url: /contacto
+          - listitem [ref=e128]:
+            - link "Volver Arriba" [ref=e129] [cursor=pointer]:
+              - /url: "#top"
+        - generic [ref=e130]:
+          - heading "Información de contacto" [level=4] [ref=e131]
+          - list [ref=e132]:
+            - listitem [ref=e133]: Mtro. Martín Conde Carreño
+            - listitem [ref=e134]: martin.condeca@yahoo.com
+            - listitem [ref=e135]: "3311961280"
+            - listitem [ref=e136]: www.hsesolutions.com
+            - listitem [ref=e137]: Zapopan, Jalisco, México
+      - generic [ref=e138]:
+        - generic [ref=e139]:
+          - link "Aviso de Privacidad" [ref=e140] [cursor=pointer]:
+            - /url: /privacidad
+          - link "Términos y Condiciones" [ref=e141] [cursor=pointer]:
+            - /url: /terminos
+        - generic [ref=e142]: © 2026 HSE Solutions®. Todos los derechos reservados. | Diseñado por Janet Conde design
+  - button "Open Next.js Dev Tools" [ref=e148] [cursor=pointer]:
+    - img [ref=e149]
+  - alert [ref=e152]
