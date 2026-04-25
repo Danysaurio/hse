@@ -7,6 +7,12 @@ import {
   faHelmetSafety,
   faTowerBroadcast,
   faCertificate,
+  faScaleBalanced as faBalance,
+  faMedal,
+  faCube,
+  faPuzzlePiece,
+  faCircleCheck,
+  faRegistered,
 } from "@fortawesome/free-solid-svg-icons";
 import type { TimelineItem } from "@/components/Timeline/Timeline";
 
@@ -16,6 +22,63 @@ export const ROLES: TimelineItem[] = [
   { year: "2008", company: "QUALTIA", role: "Gerente de Operaciones Occidente" },
   { year: "2014", company: "PMV", role: "Gerente HSE" },
   { year: "2019", company: "VESTOLIT / ORBIA", role: "Gerente HSE México" },
+];
+
+export const COMPANY_PILLARS = {
+  mission:
+    "Acompañar a empresas e instituciones en la prevención y gestión de riesgos mediante consultoría especializada, capacitación y recursos estratégicos de alto impacto. Integramos rigor técnico, creatividad y comunicación visual para garantizar seguridad, continuidad operativa y sustentabilidad.",
+  vision:
+    "Ser la consultoría líder en gestión integral de riesgos, seguridad industrial, protección civil y sustentabilidad en Latinoamérica, reconocida por transformar la complejidad normativa y técnica en soluciones claras, viables e innovadoras que fortalecen la resiliencia de organizaciones y comunidades.",
+  methodology:
+    "En HSE Solutions® abordamos cada desafío con una metodología integral que combina diagnóstico técnico, análisis de contexto y co-creación estratégica. Integramos normativa, experiencia operativa y recursos visuales adaptables para diseñar soluciones precisas, sustentables y alineadas con los objetivos institucionales de cada cliente.",
+};
+
+export const COMPANY_VALUES = [
+  {
+    title: "Integridad",
+    icon: faBalance,
+    description:
+      "Actuamos con transparencia y ética, asegurando confianza en cada decisión y servicio.",
+  },
+  {
+    title: "Excelencia",
+    icon: faMedal,
+    description:
+      "Llevamos los estándares técnicos y visuales para entregar resultados medibles.",
+  },
+  {
+    title: "Innovación",
+    icon: faCube,
+    description:
+      "Transformamos retos en oportunidades con soluciones creativas, útiles y adaptables.",
+  },
+  {
+    title: "Resiliencia",
+    icon: faCircleCheck,
+    description:
+      "Fortalecemos la capacidad de respuesta institucional frente a riesgos y cambios.",
+  },
+  {
+    title: "Colaboración",
+    icon: faPuzzlePiece,
+    description:
+      "Co-creamos soluciones con nuestros clientes integrando conocimiento y experiencia.",
+  },
+];
+
+export const COMPANY_CREDENTIALS = [
+  {
+    title: "Marca Registrada",
+    icon: faRegistered,
+    description:
+      "HSE Solutions® es una marca registrada ante el Instituto Mexicano de la Propiedad Industrial.",
+  },
+  {
+    title: "Cumplimiento Fiscal y Legal",
+    icon: faCircleCheck,
+    description:
+      "Entidad registrada ante el SAT como Persona Física con Actividades Empresariales y Profesionales.",
+  },
 ];
 
 export const SPECIALTIES = [
@@ -49,30 +112,40 @@ export const CREDENTIALS = [
   {
     icon: faGraduationCap,
     logo: "/Credenciales/UDLA.png",
+    logoWidth: 120,
+    logoHeight: 120,
     description:
       "Ingeniero Químico Industrial, egresado de la UDLA, Puebla, cédula 1319129.",
   },
   {
     icon: faAward,
     logo: "/Credenciales/ITESM.png",
+    logoWidth: 120,
+    logoHeight: 120,
     description:
       "Maestro en Sistemas Ambientales, egresado del ITESM, cédula 3777378.",
   },
   {
     icon: faShieldHalved,
     logo: "/Credenciales/colegio-peritos.png",
+    logoWidth: 120,
+    logoHeight: 120,
     description:
       "Perito en Seguridad Laboral 0031, certificado por el Colegio Nacional de Peritos en Seguridad Laboral y Protección Civil.",
   },
   {
     icon: faScaleBalanced,
     logo: "/Credenciales/colegio-peritos.png",
+    logoWidth: 120,
+    logoHeight: 120,
     description:
       "Perito Ambiental P.0172-2022, considerado en la \"Lista de personas que pueden fungir como peritas o peritos ante los órganos del poder judicial de la federación\" desde 2022.",
   },
   {
     icon: faFileCircleCheck,
     logo: "/Credenciales/cqi-irca.png",
+    logoWidth: 220,
+    logoHeight: 44,
     description:
       "Auditor Líder certificado por CQI / IRCA en Sistemas de Gestión de Calidad basado en ISO9001:2015, número de certificado 57329223-146912508.",
   },

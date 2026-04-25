@@ -1,6 +1,6 @@
 import { Container } from "@/components/Container/Container";
 import { SectionTitle } from "@/components/SectionTitle/SectionTitle";
-import { ServiceShowcaseCard } from "@/components/ServiceShowcaseCard/ServiceShowcaseCard";
+import { ShowcaseGridClient } from "./ShowcaseGridClient";
 import { SHOWCASE } from "@/data/showcase";
 import styles from "./ShowcaseGrid.module.css";
 
@@ -9,11 +9,7 @@ export function ShowcaseGrid() {
     <section className={styles.section}>
       <Container>
         <SectionTitle uppercase>Nuestros Servicios</SectionTitle>
-        <div className={styles.grid}>
-          {SHOWCASE.map((s) => (
-            <ServiceShowcaseCard key={s.alt} {...s} />
-          ))}
-        </div>
+        <ShowcaseGridClient items={SHOWCASE} />
       </Container>
     </section>
   );

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Poppins, Lato } from "next/font/google";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
@@ -7,20 +6,6 @@ config.autoAddCss = false;
 import "./globals.css";
 import { Header } from "@/components/Header/Header";
 import { Footer } from "@/components/Footer/Footer";
-
-const poppins = Poppins({
-  variable: "--font-poppins",
-  subsets: ["latin"],
-  weight: ["500", "600", "700"],
-  display: "swap",
-});
-
-const lato = Lato({
-  variable: "--font-lato",
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "HSE Solutions — Transformamos riesgos complejos en soluciones sustentables",
@@ -32,7 +17,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="es" className={`${poppins.variable} ${lato.variable}`}>
+    <html lang="es">
       <body>
         <Header />
         <main>{children}</main>

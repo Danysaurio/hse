@@ -11,20 +11,6 @@
   grid-template-columns: 56px 24px 1fr;
   align-items: start;
   gap: var(--space-2);
-  position: relative;
-}
-
-.item::before {
-  content: "";
-  position: absolute;
-  left: 67px;
-  top: 22px;
-  bottom: -28px;
-  border-left: 2px dotted var(--color-green);
-}
-
-.item:last-child::before {
-  display: none;
 }
 
 .year {
@@ -32,7 +18,16 @@
   font-weight: 600;
   color: var(--color-muted);
   font-size: 0.95rem;
-  padding-top: 2px;
+  padding-top: 1px;
+}
+
+.dotWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  /* full height so the line can extend downward */
+  align-self: stretch;
 }
 
 .dot {
@@ -40,9 +35,33 @@
   height: 12px;
   border-radius: 50%;
   background: var(--color-green);
-  margin-top: 6px;
-  justify-self: center;
+  flex-shrink: 0;
   z-index: 1;
+  margin-top: 3px;
+}
+
+.line {
+  flex: 1;
+  width: 2px;
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--color-green) 0px,
+    var(--color-green) 4px,
+    transparent 4px,
+    transparent 8px
+  );
+  /* extend into the gap below */
+  margin-bottom: calc(-1 * var(--space-3));
+}
+
+.item:last-child .line {
+  display: none;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
 .company {

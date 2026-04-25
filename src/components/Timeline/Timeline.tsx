@@ -12,7 +12,10 @@ export function Timeline({ items }: { items: TimelineItem[] }) {
       {items.map((it) => (
         <li key={it.year} className={styles.item}>
           <span className={styles.year}>{it.year}</span>
-          <span className={styles.dot} aria-hidden />
+          <div className={styles.dotWrap} aria-hidden>
+            <span className={styles.dot} />
+            <span className={styles.line} />
+          </div>
           <div className={styles.body}>
             <p className={styles.company}>{it.company}</p>
             <p className={styles.role}>{it.role}</p>

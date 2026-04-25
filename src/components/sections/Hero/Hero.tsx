@@ -26,7 +26,7 @@ export function Hero() {
               Diseñamos estrategias claras, prácticas y verificables que
               protegen a tu equipo y optimizan tu operación.
             </p>
-            <Button href="/servicios" size="lg">
+            <Button href="/servicios" size="lg" className={styles.cta}>
               Encuentra el servicio ideal para tu empresa
             </Button>
           </div>

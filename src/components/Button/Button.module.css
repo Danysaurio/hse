@@ -1,4 +1,5 @@
 .btn {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -6,31 +7,56 @@
   font-family: var(--font-display);
   font-weight: 600;
   border-radius: var(--radius-pill);
+  overflow: hidden;
   transition: background 0.2s, transform 0.2s, box-shadow 0.2s, color 0.2s;
   white-space: nowrap;
   text-align: center;
+  isolation: isolate;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background:
+    radial-gradient(120% 90% at 50% 0%, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0) 52%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 45%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.btn > * {
+  position: relative;
+  z-index: 1;
 }
 
 .md {
-  padding: 12px 28px;
-  font-size: 0.95rem;
+  padding: 14px 30px;
+  font-size: 0.98rem;
 }
 
 .lg {
-  padding: 16px 36px;
-  font-size: 1rem;
+  padding: 18px 38px;
+  font-size: 1.05rem;
 }
 
 .primary {
-  background: var(--color-green);
+  background: linear-gradient(180deg, #2e7456 0%, #245e46 100%);
   color: #fff;
-  box-shadow: 0 4px 12px rgba(29, 107, 79, 0.25);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.16),
+    0 10px 24px rgba(18, 63, 46, 0.24),
+    0 3px 10px rgba(18, 63, 46, 0.14);
 }
 
 .primary:hover {
-  background: var(--color-green-dark);
+  background: linear-gradient(180deg, #347d5d 0%, #255f47 100%);
   transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(29, 107, 79, 0.35);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.18),
+    0 14px 28px rgba(18, 63, 46, 0.28),
+    0 4px 12px rgba(18, 63, 46, 0.18);
 }
 
 .secondary {

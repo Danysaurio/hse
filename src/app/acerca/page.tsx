@@ -1,32 +1,141 @@
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Container } from "@/components/Container/Container";
-import { PageHero } from "@/components/sections/PageHero/PageHero";
 import { Timeline } from "@/components/Timeline/Timeline";
 import { ValueCard } from "@/components/ValueCard/ValueCard";
 import { CredentialCard } from "@/components/CredentialCard/CredentialCard";
-import { CtaBanner } from "@/components/CtaBanner/CtaBanner";
 import { SectionTitle } from "@/components/SectionTitle/SectionTitle";
+import { IndustriesGrid } from "@/components/sections/IndustriesGrid/IndustriesGrid";
+import { AcercaTabs } from "./AcercaTabs";
 import {
   ROLES,
   SPECIALTIES,
   CREDENTIALS,
   AFFILIATIONS,
+  COMPANY_PILLARS,
+  COMPANY_VALUES,
+  COMPANY_CREDENTIALS,
 } from "@/data/acerca";
+import { SITE } from "@/data/site";
 import styles from "./page.module.css";
 
 export const metadata = {
   title: "Acerca de — HSE Solutions",
-  description: "Mtro. Martín Conde Carreño — el experto detrás de HSE Solutions®",
+  description: "HSE Solutions® y Mtro. Martín Conde Carreño.",
 };
 
 export default function AcercaPage() {
   return (
-    <>
-      <PageHero
-        eyebrow="Acerca de | HSE Solutions®"
-        title="Acerca de | Mtro. Martín Conde Carreño"
-      />
+    <AcercaTabs
+      initial="empresa"
+      tabs={[
+        {
+          id: "empresa",
+          label: "Acerca de | HSE Solutions®",
+          content: <CompanyContent />,
+        },
+        {
+          id: "martin",
+          label: "Acerca de | Mtro. Martín Conde Carreño",
+          content: <FounderContent />,
+        },
+      ]}
+    />
+  );
+}
 
+function CompanyContent() {
+  return (
+    <>
+      <section className={styles.companyHero}>
+        <div className={styles.companyHeroImage}>
+          <Image
+            src="/building.jpg"
+            alt="HSE Solutions"
+            fill
+            priority
+            sizes="100vw"
+            className={styles.companyHeroImg}
+          />
+        </div>
+        <div className={styles.companyHeroOverlay} />
+        <Container>
+          <div className={styles.companyHeroInner}>
+            <Image
+              src="/logo-vertical.png"
+              alt="HSE Solutions"
+              width={220}
+              height={220}
+              className={styles.companyLogo}
+            />
+            <h1 className={styles.companyTitle}>{SITE.tagline}</h1>
+          </div>
+        </Container>
+      </section>
+
+      <section className={styles.companyIntro}>
+        <Container>
+          <div className={styles.pillarsGrid}>
+            <article className={styles.pillarCard}>
+              <h2>Misión</h2>
+              <p>{COMPANY_PILLARS.mission}</p>
+            </article>
+            <article className={styles.pillarCard}>
+              <h2>Visión</h2>
+              <p>{COMPANY_PILLARS.vision}</p>
+            </article>
+          </div>
+        </Container>
+      </section>
+
+      <section className={styles.valuesSection}>
+        <Container>
+          <p className={styles.valuesEyebrow}>Nuestros Valores</p>
+          <div className={styles.valuesGrid}>
+            {COMPANY_VALUES.map((value) => (
+              <article key={value.title} className={styles.valueItem}>
+                <span className={styles.valueIcon}>
+                  <FontAwesomeIcon icon={value.icon} />
+                </span>
+                <h3>{value.title}</h3>
+                <p>{value.description}</p>
+              </article>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <IndustriesGrid />
+
+      <section className={styles.methodology}>
+        <Container>
+          <div className={styles.methodologyText}>
+            <h2>Nuestra Metodología</h2>
+            <p>{COMPANY_PILLARS.methodology}</p>
+          </div>
+
+          <div className={styles.companyCredentials}>
+            {COMPANY_CREDENTIALS.map((item) => (
+              <article key={item.title} className={styles.companyCredentialCard}>
+                <span className={styles.companyCredentialIcon}>
+                  <FontAwesomeIcon icon={item.icon} />
+                </span>
+                <div>
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </Container>
+      </section>
+    </>
+  );
+}
+
+function FounderContent() {
+  return (
+    <>
       <section className={styles.bio}>
         <Container>
           <div className={styles.bioGrid}>
@@ -71,8 +180,8 @@ export default function AcercaPage() {
         <Container>
           <SectionTitle>Áreas de especialidad</SectionTitle>
           <div className={styles.specialtiesGrid}>
-            {SPECIALTIES.map((s) => (
-              <ValueCard key={s.title} title={s.title} items={s.items} />
+            {SPECIALTIES.map((specialty) => (
+              <ValueCard key={specialty.title} title={specialty.title} items={specialty.items} />
             ))}
           </div>
         </Container>
@@ -82,8 +191,15 @@ export default function AcercaPage() {
         <Container>
           <SectionTitle>Credenciales Personales</SectionTitle>
           <div className={styles.credentialsGrid}>
-            {CREDENTIALS.map((c, i) => (
-              <CredentialCard key={i} icon={c.icon} logo={c.logo} description={c.description} />
+            {CREDENTIALS.map((credential, index) => (
+              <CredentialCard
+                key={index}
+                icon={credential.icon}
+                logo={credential.logo}
+                logoWidth={credential.logoWidth}
+                logoHeight={credential.logoHeight}
+                description={credential.description}
+              />
             ))}
           </div>
         </Container>
@@ -93,33 +209,26 @@ export default function AcercaPage() {
         <Container>
           <SectionTitle>Afiliaciones y Membresías</SectionTitle>
           <div className={styles.affiliationsGrid}>
-            {AFFILIATIONS.map((a) => (
-              <article key={a.label} className={styles.affCard}>
+            {AFFILIATIONS.map((affiliation) => (
+              <article key={affiliation.label} className={styles.affCard}>
                 <div className={styles.affLogo}>
-                  <Image src={a.logo} alt={a.label} width={120} height={80} className={styles.affLogoImg} />
+                  <Image
+                    src={affiliation.logo}
+                    alt={affiliation.label}
+                    width={120}
+                    height={80}
+                    className={styles.affLogoImg}
+                  />
                 </div>
                 <div>
-                  <h4>{a.label}</h4>
-                  <p>{a.description}</p>
+                  <h4>{affiliation.label}</h4>
+                  <p>{affiliation.description}</p>
                 </div>
               </article>
             ))}
           </div>
         </Container>
       </section>
-
-      <CtaBanner
-        title={
-          <>
-            La resiliencia de su organización comienza con la estrategia
-            correcta.
-          </>
-        }
-        description="Ponga más de 30 años de experiencia pericial y directiva a trabajar para su empresa. Conversemos sobre sus desafíos en HSE."
-        ctaLabel="Solicitar asesoría"
-        ctaHref="/contacto"
-        bgImage="/edificio.jpg"
-      />
     </>
   );
 }
