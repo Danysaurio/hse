@@ -10,8 +10,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { Container } from "@/components/Container/Container";
 import { Tabs } from "@/components/Tabs/Tabs";
-import { Button } from "@/components/Button/Button";
 import { CalendlyWidget } from "@/components/CalendlyWidget/CalendlyWidget";
+import { MessagePanel } from "./MessagePanel";
 import { SITE } from "@/data/site";
 import styles from "./page.module.css";
 
@@ -139,28 +139,3 @@ function SchedulePanel() {
   );
 }
 
-function MessagePanel() {
-  return (
-    <form className={styles.form} action="mailto:martin.condeca@yahoo.com">
-      <label>
-        <span>Nombre</span>
-        <input type="text" name="name" required placeholder="Tu nombre" />
-      </label>
-      <label>
-        <span>Correo electrónico</span>
-        <input type="email" name="email" required placeholder="tu@empresa.com" />
-      </label>
-      <label>
-        <span>Asunto</span>
-        <input type="text" name="subject" placeholder="¿En qué podemos ayudarte?" />
-      </label>
-      <label>
-        <span>Mensaje</span>
-        <textarea name="message" rows={5} required placeholder="Cuéntanos sobre tu proyecto…" />
-      </label>
-      <Button type="submit" size="lg">
-        Enviar mensaje
-      </Button>
-    </form>
-  );
-}

@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from "react";
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import styles from "./AcercaTabs.module.css";
 import { Container } from "@/components/Container/Container";
@@ -16,7 +17,7 @@ type Props = {
   paramKey?: string;
 };
 
-export function AcercaTabs({ tabs, initial, paramKey = "tab" }: Props) {
+function AceracTabsInner({ tabs, initial, paramKey = "tab" }: Props) {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -52,17 +53,23 @@ export function AcercaTabs({ tabs, initial, paramKey = "tab" }: Props) {
         </div>
       </Container>
 
-      {/* Desktop: solo el panel activo */}
       <div className={styles.panel} role="tabpanel">
         {tabs.find((tab) => tab.id === active)?.content}
       </div>
 
-      {/* Mobile: todos los paneles apilados */}
       <div className={styles.mobileStack}>
         {tabs.map((tab) => (
           <div key={tab.id}>{tab.content}</div>
         ))}
       </div>
     </div>
+  );
+}
+
+export function AcercaTabs(props: Props) {
+  return (
+    <Suspense>
+      <AceracTabsInner {...props} />
+    </Suspense>
   );
 }

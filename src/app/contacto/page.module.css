@@ -119,6 +119,17 @@
   align-self: flex-start;
 }
 
+.formSuccess {
+  color: var(--color-green);
+  font-weight: 600;
+  padding: var(--space-3) 0;
+}
+
+.formError {
+  color: #c0392b;
+  font-size: 0.9rem;
+}
+
 @media (max-width: 899px) {
   .section {
     padding: var(--space-4) 0;
