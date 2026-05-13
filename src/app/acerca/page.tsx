@@ -1,11 +1,13 @@
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Container } from "@/components/Container/Container";
+import { QuoteBlock } from "@/components/QuoteBlock/QuoteBlock";
 import { Timeline } from "@/components/Timeline/Timeline";
 import { ValueCard } from "@/components/ValueCard/ValueCard";
 import { CredentialCard } from "@/components/CredentialCard/CredentialCard";
 import { SectionTitle } from "@/components/SectionTitle/SectionTitle";
 import { IndustriesGrid } from "@/components/sections/IndustriesGrid/IndustriesGrid";
+import { CtaBanner } from "@/components/CtaBanner/CtaBanner";
 import { AcercaTabs } from "./AcercaTabs";
 import {
   ROLES,
@@ -50,7 +52,7 @@ function CompanyContent() {
       <section className={styles.companyHero}>
         <div className={styles.companyHeroImage}>
           <Image
-            src="/building.jpg"
+            src="/edificio.jpg"
             alt="HSE Solutions"
             fill
             priority
@@ -90,17 +92,19 @@ function CompanyContent() {
 
       <section className={styles.valuesSection}>
         <Container>
-          <p className={styles.valuesEyebrow}>Nuestros Valores</p>
-          <div className={styles.valuesGrid}>
-            {COMPANY_VALUES.map((value) => (
-              <article key={value.title} className={styles.valueItem}>
-                <span className={styles.valueIcon}>
-                  <FontAwesomeIcon icon={value.icon} />
-                </span>
-                <h3>{value.title}</h3>
-                <p>{value.description}</p>
-              </article>
-            ))}
+          <h3>Nuestros Valores</h3>
+          <div className={styles.valuesScroll}>
+            <div className={styles.valuesGrid}>
+              {COMPANY_VALUES.map((value) => (
+                <article key={value.title} className={styles.valueItem}>
+                  <span className={styles.valueIcon}>
+                    <FontAwesomeIcon icon={value.icon} size="xl" />
+                  </span>
+                  <h3>{value.title}</h3>
+                  <p>{value.description}</p>
+                </article>
+              ))}
+            </div>
           </div>
         </Container>
       </section>
@@ -118,7 +122,7 @@ function CompanyContent() {
             {COMPANY_CREDENTIALS.map((item) => (
               <article key={item.title} className={styles.companyCredentialCard}>
                 <span className={styles.companyCredentialIcon}>
-                  <FontAwesomeIcon icon={item.icon} />
+                  <FontAwesomeIcon icon={item.icon} size="3x" />
                 </span>
                 <div>
                   <h3>{item.title}</h3>
@@ -148,31 +152,32 @@ function FounderContent() {
                 className={styles.img}
               />
             </div>
+              <QuoteBlock
+                text="Mi compromiso es transformar la gestión de riesgos en confianza institucional, integrando rigor técnico con visión estratégica para construir entornos más seguros y sustentables."
+                className={styles.quoteMobile}
+              />
             <div>
               <p className={styles.bioText}>
                 <strong>Consultor, estratega y fundador de HSE Solutions®.</strong>{" "}
-                Martín cuenta con una sólida trayectoria de más de tres décadas
-                ocupando posiciones de alto nivel en las áreas de protección
-                civil, medio ambiente y seguridad industrial.
+                Martín cuenta con una sólida trayectoria de{" "}
+                <strong>más de tres décadas</strong> ocupando posiciones de alto
+                nivel en las áreas de protección civil, medio ambiente y
+                seguridad industrial.
               </p>
               <p className={styles.bioText}>
-                Su enfoque integral combina liderazgo directivo, formación
-                especializada y asesoría técnica, aportando a las empresas los
-                protocolos necesarios para garantizar operaciones seguras y
-                eficientes.
+                Su enfoque integral combina{" "}
+                <strong>liderazgo directivo, formación especializada y asesoría técnica</strong>,
+                aportando a las empresas los protocolos necesarios para
+                garantizar <strong>operaciones seguras y eficientes.</strong>
               </p>
               <h3 className={styles.timelineTitle}>Roles Clave</h3>
               <Timeline items={ROLES} />
             </div>
           </div>
-
-          <blockquote className={styles.quote}>
-            <p>
-              Mi compromiso es transformar la gestión de riesgos en confianza
-              institucional, integrando rigor técnico con visión estratégica para
-              construir entornos más seguros y sustentables.
-            </p>
-          </blockquote>
+          <QuoteBlock
+            text="Mi compromiso es transformar la gestión de riesgos en confianza institucional, integrando rigor técnico con visión estratégica para construir entornos más seguros y sustentables."
+            className={styles.quoteDesktop}
+          />
         </Container>
       </section>
 
@@ -190,17 +195,19 @@ function FounderContent() {
       <section className={styles.credentials}>
         <Container>
           <SectionTitle>Credenciales Personales</SectionTitle>
-          <div className={styles.credentialsGrid}>
-            {CREDENTIALS.map((credential, index) => (
-              <CredentialCard
-                key={index}
-                icon={credential.icon}
-                logo={credential.logo}
-                logoWidth={credential.logoWidth}
-                logoHeight={credential.logoHeight}
-                description={credential.description}
-              />
-            ))}
+          <div className={styles.credentialsScroll}>
+            <div className={styles.credentialsGrid}>
+              {CREDENTIALS.map((credential, index) => (
+                <CredentialCard
+                  key={index}
+                  icon={credential.icon}
+                  logo={credential.logo}
+                  logoWidth={credential.logoWidth}
+                  logoHeight={credential.logoHeight}
+                  description={credential.description}
+                />
+              ))}
+            </div>
           </div>
         </Container>
       </section>
@@ -215,8 +222,9 @@ function FounderContent() {
                   <Image
                     src={affiliation.logo}
                     alt={affiliation.label}
-                    width={120}
-                    height={80}
+                    width={270}
+                    height={90}
+                    sizes="(max-width: 900px) 60vw, 270px"
                     className={styles.affLogoImg}
                   />
                 </div>
@@ -229,6 +237,14 @@ function FounderContent() {
           </div>
         </Container>
       </section>
+
+      <CtaBanner
+        bgImage="/edificio2.jpg"
+        title="La resiliencia de su organización comienza con la estrategia correcta."
+        description="Ponga más de 30 años de experiencia pericial y directiva a trabajar para su empresa. Conversemos sobre sus desafíos en HSE."
+        ctaLabel="Solicitar asesoría"
+        ctaHref="/contacto"
+      />
     </>
   );
 }

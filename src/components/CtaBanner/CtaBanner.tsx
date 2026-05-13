@@ -10,6 +10,7 @@ type Props = {
   ctaHref: string;
   variant?: "navy" | "light";
   bgImage?: string;
+  bgPosition?: string;
 };
 
 export function CtaBanner({
@@ -19,6 +20,7 @@ export function CtaBanner({
   ctaHref,
   variant = "light",
   bgImage,
+  bgPosition = "center",
 }: Props) {
   return (
     <section className={`${styles.banner} ${styles[variant]} ${bgImage ? styles.withBg : ""}`}>
@@ -29,6 +31,7 @@ export function CtaBanner({
           fill
           sizes="100vw"
           className={styles.bgImg}
+          style={{ objectPosition: bgPosition }}
           aria-hidden
         />
       )}
@@ -36,7 +39,7 @@ export function CtaBanner({
         <div className={styles.inner}>
           <h2 className={styles.title}>{title}</h2>
           {description && <p className={styles.desc}>{description}</p>}
-          <Button href={ctaHref} size="lg">
+          <Button href={ctaHref} size="md">
             {ctaLabel}
           </Button>
         </div>

@@ -1,5 +1,5 @@
 .footer {
-  background: var(--color-navy-dark);
+  background: var(--color-navy);
   color: var(--color-on-dark);
   padding: var(--space-5) 0 var(--space-3);
   margin-top: var(--space-6);

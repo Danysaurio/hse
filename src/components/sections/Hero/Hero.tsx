@@ -27,7 +27,7 @@ export function Hero() {
               protegen a tu equipo y optimizan tu operación.
             </p>
             <Button href="/servicios" size="lg" className={styles.cta}>
-              Encuentra el servicio ideal para tu empresa
+              Encuentra el servicio ideal<span className={styles.ctaHide}> para tu empresa</span>
             </Button>
           </div>
         </div>

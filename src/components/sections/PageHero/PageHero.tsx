@@ -12,7 +12,7 @@ export function PageHero({ eyebrow, title, subtitle }: Props) {
     <section className={styles.hero}>
       <Container>
         {eyebrow && <p className={styles.eyebrow}>{eyebrow}</p>}
-        <h1 className={styles.title}>{title}</h1>
+        <h2 className={styles.title}>{title}</h2>
         {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
       </Container>
     </section>

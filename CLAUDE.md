@@ -38,3 +38,7 @@ Next.js 16 App Router site for HSE Solutions (industrial safety consulting). Spa
 **Icons** — FontAwesome (solid + brands) via `@fortawesome/react-fontawesome`. Auto-CSS injection is disabled; styles are imported manually in `layout.tsx`.
 
 **Images** — `next/image` with remote patterns for `images.unsplash.com` and `picsum.photos`. Local assets in `public/`.
+
+**Third-party widgets in tabs** — When a widget (e.g. Calendly) lives inside a tab panel, use a `"use client"` component with `useEffect` to call the widget's JS init function on mount. Load the external script with `<Script strategy="lazyOnload" onLoad={...} />` as fallback for first load.
+
+**Tab ↔ URL sync** — Use `useRouter`, `usePathname`, `useSearchParams` + `router.replace(..., { scroll: false })` to reflect active tab in a `?tab=<id>` param. Validate the param against known tab ids before using it.

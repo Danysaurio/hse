@@ -2,7 +2,7 @@ import Link from "next/link";
 import styles from "./Button.module.css";
 
 type Variant = "primary" | "secondary" | "ghost";
-type Size = "md" | "lg";
+type Size = "sm" | "md" | "lg";
 
 type CommonProps = {
   variant?: Variant;

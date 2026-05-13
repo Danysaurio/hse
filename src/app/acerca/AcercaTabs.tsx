@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import styles from "./AcercaTabs.module.css";
 import { Container } from "@/components/Container/Container";
 
@@ -13,36 +13,55 @@ type Tab = {
 type Props = {
   tabs: Tab[];
   initial?: string;
+  paramKey?: string;
 };
 
-export function AcercaTabs({ tabs, initial }: Props) {
-  const [active, setActive] = useState(initial ?? tabs[0]?.id);
+export function AcercaTabs({ tabs, initial, paramKey = "tab" }: Props) {
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
+  const activeFromUrl = searchParams.get(paramKey);
+  const active = tabs.find((t) => t.id === activeFromUrl)?.id ?? initial ?? tabs[0]?.id;
+
+  function setActive(id: string) {
+    const params = new URLSearchParams(searchParams.toString());
+    params.set(paramKey, id);
+    router.replace(`${pathname}?${params.toString()}`, { scroll: false });
+  }
 
   return (
     <div className={styles.wrap}>
       <Container>
-      <div className={styles.tablist} role="tablist" aria-label="Acerca de">
-        {tabs.map((tab) => {
-          const selected = tab.id === active;
+        <div className={styles.tablist} role="tablist" aria-label="Acerca de">
+          {tabs.map((tab) => {
+            const selected = tab.id === active;
+            return (
+              <button
+                key={tab.id}
+                type="button"
+                role="tab"
+                aria-selected={selected}
+                className={`${styles.tab} ${selected ? styles.active : ""}`}
+                onClick={() => setActive(tab.id)}
+              >
+                {tab.label}
+              </button>
+            );
+          })}
+        </div>
+      </Container>
 
-          return (
-            <button
-              key={tab.id}
-              type="button"
-              role="tab"
-              aria-selected={selected}
-              className={`${styles.tab} ${selected ? styles.active : ""}`}
-              onClick={() => setActive(tab.id)}
-            >
-              {tab.label}
-            </button>
-          );
-        })}
-      </div>
-    </Container>
-
+      {/* Desktop: solo el panel activo */}
       <div className={styles.panel} role="tabpanel">
         {tabs.find((tab) => tab.id === active)?.content}
+      </div>
+
+      {/* Mobile: todos los paneles apilados */}
+      <div className={styles.mobileStack}>
+        {tabs.map((tab) => (
+          <div key={tab.id}>{tab.content}</div>
+        ))}
       </div>
     </div>
   );

@@ -1,0 +1,51 @@
+.quote {
+  position: relative;
+  margin-top: calc(-1 * var(--space-5));
+  background: var(--color-navy);
+  color: #fff;
+  padding: var(--space-2);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  overflow: hidden;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.iconLeft {
+  position: absolute;
+  top: var(--space-2);
+  left: var(--space-2);
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.08);
+  pointer-events: none;
+}
+
+.iconRight {
+  position: absolute;
+  bottom: var(--space-2);
+  right: var(--space-2);
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.08);
+  pointer-events: none;
+}
+
+.quote p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-size: 1.3rem;
+  text-align: justify;
+  line-height: 1.3;
+  padding: var(--space-3) var(--space-5);
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+@media (max-width: 768px) {
+  .quote p{
+    padding: var(--space-4) var(--space-2);
+  }
+}

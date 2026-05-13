@@ -18,7 +18,7 @@ export function CredentialCard({ icon, logo, description, logoWidth = 220, logoH
         {logo ? (
           <Image src={logo} alt="" width={logoWidth} height={logoHeight} className={styles.logoImg} />
         ) : (
-          <FontAwesomeIcon icon={icon} />
+          <FontAwesomeIcon icon={icon} size="3x" />
         )}
       </div>
       <p className={styles.desc}>{description}</p>

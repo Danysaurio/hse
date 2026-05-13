@@ -16,6 +16,7 @@ export function SectionTitle({
   return (
     <Tag
       className={`${styles.title} ${styles[align]} ${uppercase ? styles.uppercase : ""}`}
+      style={{ fontSize: "1.8rem" }}
     >
       {children}
     </Tag>

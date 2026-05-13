@@ -5,7 +5,7 @@ export const SITE = {
   designedBy: "Diseñado por Janet Conde design",
   contact: {
     name: "Mtro. Martín Conde Carreño",
-    email: "martin.condeca@yahoo.com",
+    email: "direccion@hsesolutions.mx",
     phone: "3311961280",
     web: "www.hsesolutions.com",
     location: "Zapopan, Jalisco, México",

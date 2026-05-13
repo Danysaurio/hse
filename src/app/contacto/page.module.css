@@ -13,7 +13,7 @@
 .title {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-size: clamp(1.2rem, 4vw, 2rem);
   color: var(--color-navy);
   line-height: 1.1;
   margin-bottom: var(--space-3);
@@ -70,44 +70,11 @@
 }
 
 .calendar {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-3);
-}
-
-.calHead {
-  border-left: 3px solid var(--color-green);
-  padding-left: var(--space-2);
-}
-
-.calName {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: var(--color-navy);
-}
-
-.calMeta {
-  color: var(--color-muted);
-  font-size: 0.9rem;
-}
-
-.calBody {
-  color: var(--color-muted);
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-
-.placeholder {
-  background: var(--color-bg);
-  border: 2px dashed var(--color-border);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
-  padding: var(--space-4);
-  text-align: center;
-  color: var(--color-navy);
-  font-family: var(--font-display);
-  font-weight: 600;
+  overflow: hidden;
 }
+
 
 .form {
   display: flex;
@@ -152,9 +119,25 @@
   align-self: flex-start;
 }
 
+@media (max-width: 899px) {
+  .section {
+    padding: var(--space-4) 0;
+  }
+
+  .contact li,
+  .times li {
+    font-size: 0.88rem;
+  }
+
+  .form button {
+    align-self: stretch;
+    justify-content: center;
+  }
+}
+
 @media (min-width: 900px) {
   .grid {
-    grid-template-columns: 1fr 1.2fr;
+    grid-template-columns: 1fr 1.8fr;
     gap: var(--space-5);
   }
 }

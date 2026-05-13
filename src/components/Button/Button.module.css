@@ -31,14 +31,36 @@
   z-index: 1;
 }
 
+.sm {
+  padding: 7px 14px;
+  font-size: 0.78rem;
+}
+
 .md {
-  padding: 14px 30px;
-  font-size: 0.98rem;
+  padding: 11px 22px;
+  font-size: 0.9rem;
 }
 
 .lg {
-  padding: 18px 38px;
-  font-size: 1.05rem;
+  padding: 13px 28px;
+  font-size: 0.95rem;
+}
+
+@media (min-width: 768px) {
+  .sm {
+    padding: 8px 18px;
+    font-size: 0.82rem;
+  }
+
+  .md {
+    padding: 14px 30px;
+    font-size: 0.98rem;
+  }
+
+  .lg {
+    padding: 18px 38px;
+    font-size: 1.05rem;
+  }
 }
 
 .primary {

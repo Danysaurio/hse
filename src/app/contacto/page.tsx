@@ -11,6 +11,7 @@ import {
 import { Container } from "@/components/Container/Container";
 import { Tabs } from "@/components/Tabs/Tabs";
 import { Button } from "@/components/Button/Button";
+import { CalendlyWidget } from "@/components/CalendlyWidget/CalendlyWidget";
 import { SITE } from "@/data/site";
 import styles from "./page.module.css";
 
@@ -25,7 +26,7 @@ export default function ContactoPage() {
       <Container>
         <div className={styles.grid}>
           <div className={styles.info}>
-            <h1 className={styles.title}>Inicia tu Diagnóstico HSE</h1>
+            <h2 className={styles.title}>Inicia tu <br/> Diagnóstico HSE</h2>
 
             <ul className={styles.contact}>
               <li>
@@ -133,21 +134,7 @@ export default function ContactoPage() {
 function SchedulePanel() {
   return (
     <div className={styles.calendar}>
-      <div className={styles.calHead}>
-        <p className={styles.calName}>Demo Call</p>
-        <p className={styles.calMeta}>30 min — Diagnóstico inicial sin costo</p>
-      </div>
-      <p className={styles.calBody}>
-        Un miembro de nuestro equipo te guiará por la propuesta y resolverá tus
-        dudas técnicas.
-      </p>
-      <div className={styles.placeholder}>
-        <p>Selecciona una fecha y hora</p>
-        <p className={styles.dim}>(Integración con Calendly próximamente)</p>
-      </div>
-      <Button href="mailto:martin.condeca@yahoo.com" size="lg">
-        Solicitar diagnóstico por correo
-      </Button>
+      <CalendlyWidget />
     </div>
   );
 }

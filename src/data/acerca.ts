@@ -69,13 +69,13 @@ export const COMPANY_VALUES = [
 export const COMPANY_CREDENTIALS = [
   {
     title: "Marca Registrada",
-    icon: faRegistered,
+    icon: faCertificate,
     description:
       "HSE Solutions® es una marca registrada ante el Instituto Mexicano de la Propiedad Industrial.",
   },
   {
     title: "Cumplimiento Fiscal y Legal",
-    icon: faCircleCheck,
+    icon: faRegistered,
     description:
       "Entidad registrada ante el SAT como Persona Física con Actividades Empresariales y Profesionales.",
   },
@@ -111,31 +111,30 @@ export const SPECIALTIES = [
 export const CREDENTIALS = [
   {
     icon: faGraduationCap,
-    logo: "/Credenciales/UDLA.png",
-    logoWidth: 120,
-    logoHeight: 120,
+    logo: "/Credenciales/UDLA1.png",
+    logoWidth: 140,
+    logoHeight: 40,
     description:
       "Ingeniero Químico Industrial, egresado de la UDLA, Puebla, cédula 1319129.",
   },
   {
     icon: faAward,
     logo: "/Credenciales/ITESM.png",
-    logoWidth: 120,
-    logoHeight: 120,
+    logoWidth: 70,
+    logoHeight: 70,
     description:
       "Maestro en Sistemas Ambientales, egresado del ITESM, cédula 3777378.",
   },
   {
     icon: faShieldHalved,
-    logo: "/Credenciales/colegio-peritos.png",
-    logoWidth: 120,
-    logoHeight: 120,
+    logo: "/Credenciales/colegio-peritos1.png",
+    logoWidth: 170,
+    logoHeight: 150,
     description:
       "Perito en Seguridad Laboral 0031, certificado por el Colegio Nacional de Peritos en Seguridad Laboral y Protección Civil.",
   },
   {
     icon: faScaleBalanced,
-    logo: "/Credenciales/colegio-peritos.png",
     logoWidth: 120,
     logoHeight: 120,
     description:
@@ -165,7 +164,7 @@ export const CREDENTIALS = [
       "Técnico Básico en Gestión Integral de Riesgos con folio 22164HO7235, CENAPRED.",
   },
   {
-    icon: faCertificate,
+    icon: faFileCircleCheck,
     description:
       "Experto técnico en Normas Oficiales Mexicanas de la STPS, ETSH-117-UI, aprobado por la EMA.",
   },
@@ -179,7 +178,7 @@ export const AFFILIATIONS = [
   },
   {
     label: "Colegio Nacional",
-    logo: "/Credenciales/colegio-peritos.png",
+    logo: "/Credenciales/colegio-peritos1.png",
     description:
       "Colegio Nacional de Peritos en Seguridad Laboral y Protección Civil",
   },

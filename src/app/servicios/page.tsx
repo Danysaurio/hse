@@ -1,8 +1,6 @@
+import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faShieldHalved,
-  faChevronRight,
-} from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { Container } from "@/components/Container/Container";
 import { PageHero } from "@/components/sections/PageHero/PageHero";
 import { Button } from "@/components/Button/Button";
@@ -23,15 +21,18 @@ export default function ServiciosPage() {
 
       <section className={styles.policy}>
         <Container>
-          <div className={styles.policyHead}>
-            <span className={styles.policyIcon}>
-              <FontAwesomeIcon icon={faShieldHalved} />
-            </span>
-            <h2>Póliza HSE Solutions®: Solución Integral</h2>
-          </div>
-
           <div className={styles.policyGrid}>
-            <div>
+            <div className={styles.policyLeft}>
+              <div className={styles.policyHead}>
+                <Image
+                  src="/icono.png"
+                  alt=""
+                  width={40}
+                  height={40}
+                  className={styles.policyIcon}
+                />
+                <h2>Póliza HSE Solutions®: Solución Integral</h2>
+              </div>
               <p className={styles.policyLead}>
                 Tu aliado permanente en <strong>gestión integral</strong>. La
                 Póliza HSE Solutions® acompaña a tu empresa desde el diagnóstico
@@ -44,24 +45,13 @@ export default function ServiciosPage() {
                 desempeño. Un servicio integral que garantiza resiliencia,
                 cumplimiento y sustentabilidad.
               </p>
-              <ul className={styles.policyList}>
-                <li>
-                  <FontAwesomeIcon icon={faChevronRight} className={styles.chev} />
-                  Diseño e implementación de Sistemas de Gestión Integrados o Específicos
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faChevronRight} className={styles.chev} />
-                  Evaluación y mejora de Sistemas de Gestión Integrados o Específicos
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faChevronRight} className={styles.chev} />
-                  Desarrollo de Programas de Seguridad y seguimiento de indicadores
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faChevronRight} className={styles.chev} />
-                  Desarrollo de Programas de cumplimiento legal y seguimiento de indicadores
-                </li>
-              </ul>
+              <Image
+                src="/escritorio1.png"
+                alt="Equipo HSE Solutions"
+                width={1072}
+                height={2581}
+                className={styles.policyImg}
+              />
             </div>
 
             <aside className={styles.benefits}>
@@ -76,13 +66,12 @@ export default function ServiciosPage() {
                   </li>
                 ))}
               </ul>
+              <div className={styles.policyCta}>
+                <Button href="/contacto" size="sm">
+                  Agendar Sesión de Diagnóstico
+                </Button>
+              </div>
             </aside>
-          </div>
-
-          <div className={styles.policyCta}>
-            <Button href="/contacto" size="lg">
-              Agendar Sesión de Diagnóstico
-            </Button>
           </div>
         </Container>
       </section>
@@ -124,7 +113,8 @@ export default function ServiciosPage() {
         }
         ctaLabel="Agendar Sesión Diagnóstico"
         ctaHref="/contacto"
-        bgImage="/reunion.jpg"
+        bgImage="/poliza-hse-1.jpg"
+        bgPosition="center 60%"
       />
     </>
   );

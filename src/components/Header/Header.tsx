@@ -47,25 +47,37 @@ export function Header() {
           <button
             className={styles.menuBtn}
             aria-label="Abrir menú"
-            onClick={() => setOpen((v) => !v)}
+            onClick={() => setOpen(true)}
           >
-            <FontAwesomeIcon icon={open ? faXmark : faBars} />
+            <FontAwesomeIcon icon={faBars} />
           </button>
         </div>
 
         {open && (
-          <nav className={styles.mobileNav}>
-            {NAV.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`${styles.mobileLink} ${isActive(item.href) ? styles.active : ""}`}
+          <div className={styles.overlay}>
+            <div className={styles.overlayTop}>
+              <FontAwesomeIcon icon={faBars} className={styles.overlayIcon} />
+              <button
+                className={styles.closeBtn}
+                aria-label="Cerrar menú"
                 onClick={() => setOpen(false)}
               >
-                {item.label}
-              </Link>
-            ))}
-          </nav>
+                <FontAwesomeIcon icon={faXmark} />
+              </button>
+            </div>
+            <nav className={styles.mobileNav}>
+              {NAV.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`${styles.mobileLink} ${isActive(item.href) ? styles.active : ""}`}
+                  onClick={() => setOpen(false)}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </nav>
+          </div>
         )}
       </Container>
     </header>

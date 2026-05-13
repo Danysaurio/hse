@@ -9,6 +9,7 @@
 
 .bg {
   object-fit: cover;
+  object-position: center 70%;
   z-index: 0;
   transform: scaleX(-1);
 }
@@ -77,22 +78,27 @@
     background: linear-gradient(
       180deg,
       rgba(244, 245, 247, 0.2) 0%,
-      rgba(244, 245, 247, 0.88) 40%,
-      rgba(244, 245, 247, 0.96) 100%
+      rgba(244, 245, 247, 0.3) 40%,
+      rgba(244, 245, 247, 0.6) 100%
     );
   }
 
   .inner {
     justify-content: center;
     min-height: 640px;
-    align-items: flex-end;
+    align-items: center;
     padding: var(--space-4) 0;
   }
 
   .content {
-    text-align: left;
+    text-align: center;
+    align-items: flex-end;
     max-width: 100%;
     gap: var(--space-2);
+  }
+
+  .ctaHide {
+    display: none;
   }
 
   .title {

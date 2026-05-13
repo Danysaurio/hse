@@ -1,5 +1,5 @@
 .hero {
-  background: var(--color-bg);
+  background-color: #fff;
   padding: var(--space-5) 0 var(--space-4);
 }
 
@@ -14,7 +14,7 @@
 .title {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-size: clamp(1.35rem, 4.5vw, 2.5rem);
   color: var(--color-navy);
   line-height: 1.15;
   letter-spacing: -0.015em;
