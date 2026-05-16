@@ -12,7 +12,16 @@ export function Hero() {
         fill
         priority
         sizes="100vw"
-        className={styles.bg}
+        className={`${styles.bg} ${styles.bgDesktop}`}
+        aria-hidden
+      />
+      <Image
+        src="/inicio-mobile.jpeg"
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className={`${styles.bg} ${styles.bgMobile}`}
         aria-hidden
       />
       <Container>

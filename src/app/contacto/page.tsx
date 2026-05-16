@@ -11,9 +11,9 @@ import {
 import { Container } from "@/components/Container/Container";
 import { Tabs } from "@/components/Tabs/Tabs";
 import { CalendlyWidget } from "@/components/CalendlyWidget/CalendlyWidget";
-import { MessagePanel } from "./MessagePanel";
 import { SITE } from "@/data/site";
 import styles from "./page.module.css";
+import HolaTypeform from "../hola/HolaTypeform";
 
 export const metadata = {
   title: "Contacto — HSE Solutions",
@@ -39,15 +39,15 @@ export default function ContactoPage() {
               </li>
               <li>
                 <FontAwesomeIcon icon={faEnvelope} />
-                <span>{SITE.contact.email}</span>
+                <a href={`mailto:${SITE.contact.email}`}>{SITE.contact.email}</a>
               </li>
               <li>
                 <FontAwesomeIcon icon={faPhone} />
-                <span>{SITE.contact.phone}</span>
+                <a href={`tel:${SITE.contact.phone}`}>{SITE.contact.phone}</a>
               </li>
               <li>
                 <FontAwesomeIcon icon={faGlobe} />
-                <span>{SITE.contact.web}</span>
+                <a href={`https://${SITE.contact.web}`} target="_blank" rel="noopener noreferrer">{SITE.contact.web}</a>
               </li>
               <li>
                 <FontAwesomeIcon icon={faLocationDot} />
@@ -65,10 +65,10 @@ export default function ContactoPage() {
                 <FontAwesomeIcon icon={faClock} />
                 <span>Respuesta a dudas generales: 24 hrs</span>
               </li>
+                  <strong>Por servicio:</strong>
               <li>
                 <FontAwesomeIcon icon={faClock} />
                 <div>
-                  <strong>Por servicio:</strong>
                   <p>Capacitación técnica y normativa de 5 a 10 días hábiles</p>
                   <p className={styles.dim}>
                     Diseño del programa, validación temática y entrega de
@@ -120,7 +120,7 @@ export default function ContactoPage() {
                 {
                   id: "mensaje",
                   label: "Enviar un mensaje",
-                  content: <MessagePanel />,
+                  content: <HolaTypeform />,
                 },
               ]}
             />

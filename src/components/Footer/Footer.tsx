@@ -35,9 +35,9 @@ export function Footer() {
             <h4 className={styles.colTitle}>Información de contacto</h4>
             <ul className={styles.contact}>
               <li>{SITE.contact.name}</li>
-              <li>{SITE.contact.email}</li>
-              <li>{SITE.contact.phone}</li>
-              <li>{SITE.contact.web}</li>
+              <li><a href={`mailto:${SITE.contact.email}`}>{SITE.contact.email}</a></li>
+              <li><a href={`tel:${SITE.contact.phone}`}>{SITE.contact.phone}</a></li>
+              <li><a href={`https://${SITE.contact.web}`} target="_blank" rel="noopener noreferrer">{SITE.contact.web}</a></li>
               <li>{SITE.contact.location}</li>
             </ul>
           </div>
@@ -49,7 +49,17 @@ export function Footer() {
             <Link href="/terminos">Términos y Condiciones</Link>
           </div>
           <div className={styles.copy}>
-            {SITE.copyright} | {SITE.designedBy}
+            {SITE.copyright}
+          </div>
+          <div className={styles.credits}>
+            Diseñado por{" "}
+            <a href="https://www.instagram.com/janetcondedesign/" target="_blank" rel="noopener noreferrer">
+              Janet Conde
+            </a>{" "}·{" "}
+            Desarrollado por{" "}
+            <a href="https://danizavala.com/" target="_blank" rel="noopener noreferrer">
+              Daniel Zavala
+            </a>
           </div>
         </div>
       </Container>

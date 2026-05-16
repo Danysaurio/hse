@@ -33,25 +33,27 @@ function AceracTabsInner({ tabs, initial, paramKey = "tab" }: Props) {
 
   return (
     <div className={styles.wrap}>
-      <Container>
-        <div className={styles.tablist} role="tablist" aria-label="Acerca de">
-          {tabs.map((tab) => {
-            const selected = tab.id === active;
-            return (
-              <button
-                key={tab.id}
-                type="button"
-                role="tab"
-                aria-selected={selected}
-                className={`${styles.tab} ${selected ? styles.active : ""}`}
-                onClick={() => setActive(tab.id)}
-              >
-                {tab.label}
-              </button>
-            );
-          })}
-        </div>
-      </Container>
+      <div className={styles.stickyBar}>
+        <Container>
+          <div className={styles.tablist} role="tablist" aria-label="Acerca de">
+            {tabs.map((tab) => {
+              const selected = tab.id === active;
+              return (
+                <button
+                  key={tab.id}
+                  type="button"
+                  role="tab"
+                  aria-selected={selected}
+                  className={`${styles.tab} ${selected ? styles.active : ""}`}
+                  onClick={() => setActive(tab.id)}
+                >
+                  {tab.label}
+                </button>
+              );
+            })}
+          </div>
+        </Container>
+      </div>
 
       <div className={styles.panel} role="tabpanel">
         {tabs.find((tab) => tab.id === active)?.content}

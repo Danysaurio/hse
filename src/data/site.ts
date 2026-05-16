@@ -3,11 +3,12 @@ export const SITE = {
   tagline: "Soluciones Integrales hacia un futuro seguro y sustentable",
   copyright: "© 2026 HSE Solutions®. Todos los derechos reservados.",
   designedBy: "Diseñado por Janet Conde design",
+  developedBy: "Desarrollado por Daniel Zavala",
   contact: {
     name: "Mtro. Martín Conde Carreño",
     email: "direccion@hsesolutions.mx",
     phone: "3311961280",
-    web: "www.hsesolutions.com",
+    web: "www.hsesolutions.mx",
     location: "Zapopan, Jalisco, México",
   },
 };

@@ -100,3 +100,19 @@
 .ghost:hover {
   color: var(--color-green);
 }
+
+.muted {
+  background: #d1d5db;
+  color: var(--color-navy-dark);
+  font-weight: 400;
+  box-shadow: none;
+}
+
+.muted::before {
+  display: none;
+}
+
+.muted:hover {
+  background: #bcc1c9;
+  transform: translateY(-1px);
+}

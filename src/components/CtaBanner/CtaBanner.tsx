@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Container } from "@/components/Container/Container";
 import { Button } from "@/components/Button/Button";
+import { SectionTitle } from "@/components/SectionTitle/SectionTitle";
 import styles from "./CtaBanner.module.css";
 
 type Props = {
@@ -37,7 +38,9 @@ export function CtaBanner({
       )}
       <Container>
         <div className={styles.inner}>
-          <h2 className={styles.title}>{title}</h2>
+          <SectionTitle align="center" className={styles.title}>
+            {title}
+          </SectionTitle>
           {description && <p className={styles.desc}>{description}</p>}
           <Button href={ctaHref} size="md">
             {ctaLabel}

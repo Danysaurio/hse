@@ -5,6 +5,7 @@ type Props = {
   align?: "left" | "center";
   uppercase?: boolean;
   as?: "h2" | "h3";
+  className?: string;
 };
 
 export function SectionTitle({
@@ -12,10 +13,11 @@ export function SectionTitle({
   align = "center",
   uppercase = false,
   as: Tag = "h2",
+  className = "",
 }: Props) {
   return (
     <Tag
-      className={`${styles.title} ${styles[align]} ${uppercase ? styles.uppercase : ""}`}
+      className={`${styles.title} ${styles[align]} ${uppercase ? styles.uppercase : ""} ${className}`}
       style={{ fontSize: "1.8rem" }}
     >
       {children}

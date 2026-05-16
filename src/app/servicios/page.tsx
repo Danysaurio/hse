@@ -2,11 +2,13 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { Container } from "@/components/Container/Container";
-import { PageHero } from "@/components/sections/PageHero/PageHero";
 import { Button } from "@/components/Button/Button";
 import { CtaBanner } from "@/components/CtaBanner/CtaBanner";
 import { DETAILED_SERVICES, POLICY_BENEFITS } from "@/data/servicios";
+import { SHOWCASE } from "@/data/showcase";
+import { FichaTecnicaBtn } from "./FichaTecnicaBtn";
 import styles from "./page.module.css";
+import { SectionTitle } from "@/components/SectionTitle/SectionTitle";
 
 export const metadata = {
   title: "Servicios — HSE Solutions",
@@ -17,8 +19,9 @@ export const metadata = {
 export default function ServiciosPage() {
   return (
     <>
-      <PageHero title="Transformamos la complejidad normativa en ventajas competitivas para su industria." />
-
+      <Container className={styles.heroContainer}>
+        <SectionTitle align="center">Transformamos la complejidad normativa en <br /> ventajas competitivas para su industria.</SectionTitle>
+      </Container>
       <section className={styles.policy}>
         <Container>
           <div className={styles.policyGrid}>
@@ -31,7 +34,7 @@ export default function ServiciosPage() {
                   height={40}
                   className={styles.policyIcon}
                 />
-                <h2>Póliza HSE Solutions®: Solución Integral</h2>
+                <h3 className={styles.policyTitle}>Póliza HSE Solutions®: Solución Integral</h3>
               </div>
               <p className={styles.policyLead}>
                 Tu aliado permanente en <strong>gestión integral</strong>. La
@@ -44,9 +47,10 @@ export default function ServiciosPage() {
                 especializado y sistemas de gestión con indicadores de
                 desempeño. Un servicio integral que garantiza resiliencia,
                 cumplimiento y sustentabilidad.
+                <FichaTecnicaBtn label="Conocer detalles" className={styles.policyBtn} showcase={SHOWCASE[3]} />
               </p>
               <Image
-                src="/escritorio1.png"
+                src="/escritoriocut.png"
                 alt="Equipo HSE Solutions"
                 width={1072}
                 height={2581}
@@ -79,7 +83,7 @@ export default function ServiciosPage() {
       <section className={styles.detailed}>
         <Container>
           <div className={styles.detailedGrid}>
-            {DETAILED_SERVICES.map((s) => (
+            {DETAILED_SERVICES.map((s, i) => (
               <article key={s.title} className={styles.dCard}>
                 <div className={styles.dIcon}>
                   <FontAwesomeIcon icon={s.icon} />
@@ -97,6 +101,7 @@ export default function ServiciosPage() {
                     </li>
                   ))}
                 </ul>
+                <FichaTecnicaBtn showcase={SHOWCASE[i]} />
               </article>
             ))}
           </div>

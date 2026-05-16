@@ -10,7 +10,7 @@ export function MartinBio() {
         <div className={styles.grid}>
           <div className={styles.imgWrap}>
             <Image
-              src="/martin-conde.png"
+              src="/MCC-sq.png"
               alt="Mtro. Martín Conde Carreño"
               fill
               sizes="(max-width: 900px) 90vw, 380px"
@@ -35,7 +35,7 @@ export function MartinBio() {
               de entornos más seguros, resilientes y sustentables.
             </p>
             <div className={styles.cta}>
-              <Button href="/acerca">Conocer más</Button>
+              <Button href="/acerca?tab=martin">Conocer más</Button>
             </div>
           </div>
         </div>

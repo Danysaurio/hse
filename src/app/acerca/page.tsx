@@ -66,24 +66,24 @@ function CompanyContent() {
             <Image
               src="/logo-vertical.png"
               alt="HSE Solutions"
-              width={220}
-              height={220}
+              width={420}
+              height={420}
               className={styles.companyLogo}
             />
-            <h1 className={styles.companyTitle}>{SITE.tagline}</h1>
           </div>
         </Container>
       </section>
 
       <section className={styles.companyIntro}>
         <Container>
+          <h1 className={styles.companyTitle}>{SITE.tagline}</h1>
           <div className={styles.pillarsGrid}>
             <article className={styles.pillarCard}>
-              <h2>Misión</h2>
+              <SectionTitle align="left">Misión</SectionTitle>
               <p>{COMPANY_PILLARS.mission}</p>
             </article>
             <article className={styles.pillarCard}>
-              <h2>Visión</h2>
+              <SectionTitle align="left">Visión</SectionTitle>
               <p>{COMPANY_PILLARS.vision}</p>
             </article>
           </div>
@@ -92,7 +92,7 @@ function CompanyContent() {
 
       <section className={styles.valuesSection}>
         <Container>
-          <h3>Nuestros Valores</h3>
+          <SectionTitle as="h3">Nuestros Valores</SectionTitle>
           <div className={styles.valuesScroll}>
             <div className={styles.valuesGrid}>
               {COMPANY_VALUES.map((value) => (
@@ -145,7 +145,7 @@ function FounderContent() {
           <div className={styles.bioGrid}>
             <div className={styles.imgWrap}>
               <Image
-                src="/martin-conde.png"
+                src="/MCC-portrait.png"
                 alt="Mtro. Martín Conde Carreño"
                 fill
                 sizes="(max-width: 900px) 90vw, 380px"

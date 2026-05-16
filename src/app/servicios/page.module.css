@@ -1,3 +1,11 @@
+.heroContainer {
+  margin-top: var(--space-5);
+}
+
+.policyTitle {
+  font-size: 1.4rem;
+}
+
 .policy {
   background: var(--color-bg);
   padding-top: var(--space-4);
@@ -56,6 +64,13 @@
   font-size: 0.95rem;
   line-height: 1.7;
   margin-bottom: var(--space-3);
+  position: relative;
+  display: block;
+}
+
+.policyBtn {
+  right: 0;
+  bottom: -50px !important;
 }
 
 .policyList {
@@ -146,6 +161,8 @@
   gap: var(--space-2);
   box-shadow: var(--shadow-sm);
   transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  padding-bottom: var(--space-6);
 }
 
 .dCard:hover {
@@ -229,3 +246,9 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+.fichaBtn {
+  position: absolute;
+  bottom: 25px;
+}
+
