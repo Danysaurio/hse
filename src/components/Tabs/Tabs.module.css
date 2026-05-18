@@ -17,9 +17,11 @@
   font-weight: 600;
   font-size: 1rem;
   color: var(--color-muted);
-  padding: var(--space-2) 0;
+  padding: var(--space-2) var(--space-2);
   border-bottom: 3px solid transparent;
   transition: color 0.2s, border-color 0.2s;
+  flex: 1;
+  text-align: center;
 }
 
 .tab:hover {
@@ -34,4 +36,18 @@
 .panel {
   padding: var(--space-4) var(--space-3);
   min-height: 500px;
+}
+
+@media (max-width: 480px) {
+  .panel {
+    padding: var(--space-2) var(--space-1);
+  }
+   .tab {
+    font-size: 0.85rem;
+    padding: var(--space-1) var(--space-1);
+  }
+  .tablist {
+    padding: 0;
+  }
+
 }

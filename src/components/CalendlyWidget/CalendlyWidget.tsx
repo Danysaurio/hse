@@ -21,7 +21,7 @@ export function CalendlyWidget() {
 
   return (
     <>
-      <div ref={ref} style={{ minWidth: "320px", height: "700px" }} />
+      <div ref={ref} style={{ width: "100%", minWidth: 0, height: "700px" }} />
       <Script
         src="https://assets.calendly.com/assets/external/widget.js"
         strategy="lazyOnload"
